@@ -61,464 +61,11 @@
 
 
 
-    <!-- About Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <!-- <h2 class="text-primary font-secondary">About Us</h2> -->
-                <h1 class="display-4 text-uppercase">Welcome To CakeCraft</h1>
-            </div>
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="img/about.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">CakeCraft is trusted by hundreds of happy customers in Nashik for our consistent quality, creative designs, and timely service.</h4>
-                    <p class="mb-5">CakeCraft is a premium bakery dedicated to creating fresh, delicious, and beautifully crafted cakes for every celebration. We focus on quality ingredients, hygienic baking, and elegant designs to deliver cakes that taste as good as they look.
-
-Every cake is carefully prepared by skilled bakers who combine creativity with consistency. From classic flavors to custom designs, we ensure each order meets the highest standards of taste, freshness, and customer satisfaction.</p>
-                    <div class="row g-5">
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4"
-                                style="width: 90px; height: 90px;">
-                                <i class="fa fa-heartbeat fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">100% Healthy</h4>
-                            <p class="mb-0">We use high-quality ingredients and maintain strict hygiene standards to ensure safe, fresh, and healthy cakes for every customer.</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-primary border-inner mb-4"
-                                style="width: 90px; height: 90px;">
-                                <i class="fa fa-award fa-2x text-white"></i>
-                            </div>
-                            <h4 class="text-uppercase">Award Winning</h4>
-                            <p class="mb-0">Recognized for quality, creativity, and customer trust, CakeCraft delivers excellence in every cake we create. Recognized for quality, creativity, and customer trust, CakeCraft delivers excellence in every cake we create.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
 
 
-    <!-- Facts Start -->
-    <div class="container-fluid bg-img py-5 mb-5">
-        <div class="container py-5">
-            <div class="row gx-5 gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-star text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Our Experience</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">150</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Cake Specialist</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">70</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Complete Project</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">120</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3"
-                            style="width: 60px; height: 60px;">
-                            <i class="fa fa-mug-hot text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Happy Clients</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">120</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
  
 
-    <!-- Products Start -->
-    <div class="container-fluid about py-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Menu & Pricing</h2>
-                <h1 class="display-4 text-uppercase">Explore Our Cakes</h1>
-            </div>
-            <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Birthday</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Wedding</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-1.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Birthday Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane fade show p-0">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-2.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-pane fade show p-0">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="img/cake-3.jpg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">$99.00</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom Cake</h5>
-                                        <span>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Products End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Birthday Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Wedding Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Custom Cake</h4>
-                        <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-6 text-center">
-                    <h1 class="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5">Order Now</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service Start -->
-
-
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Team Members</h2>
-                <h1 class="display-4 text-uppercase">Our Master Chefs</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
-                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-start">
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
-                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-start">
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="team-item">
-                        <div class="position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
-                            <div class="team-overlay w-100 h-100 position-absolute top-50 start-50 translate-middle d-flex align-items-center justify-content-center">
-                                <div class="d-flex align-items-center justify-content-start">
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                    <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 mx-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-dark border-inner text-center p-4">
-                            <h4 class="text-uppercase text-primary">Full Name</h4>
-                            <p class="text-white m-0">Designation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
+ 
 
     <!-- Offer Start -->
     <div class="container-fluid bg-offer my-5 py-5">
@@ -537,65 +84,46 @@ Every cake is carefully prepared by skilled bakers who combine creativity with c
         </div>
     </div>
     <!-- Offer End -->
+<!-- Cake Categories Start -->
+<div class="container py-5">
+    <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
+        <h2 class="text-primary font-secondary">Categories</h2>
+        <h1 class="display-4 text-uppercase">Choose Your Cake</h1>
+    </div>
 
+    <div class="row justify-content-center text-center g-4">
+        <div class="col-6 col-md-3">
+            <a href="wedding.html" class="cake-category">
+                <img src="img/wedding.jpg" alt="Wedding Cake">
+                <h5>Wedding Cake</h5>
+            </a>
+        </div>
 
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Testimonial</h2>
-                <h1 class="display-4 text-uppercase">Our Clients Say!!!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel">
-                <div class="testimonial-item bg-dark text-white border-inner p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;">
-                        <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </p>
-                </div>
-                <div class="testimonial-item bg-dark text-white border-inner p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;">
-                        <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </p>
-                </div>
-                <div class="testimonial-item bg-dark text-white border-inner p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;">
-                        <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </p>
-                </div>
-                <div class="testimonial-item bg-dark text-white border-inner p-4">
-                    <div class="d-flex align-items-center mb-3">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;">
-                        <div class="ps-3">
-                            <h4 class="text-primary text-uppercase mb-1">Client Name</h4>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                    <p class="mb-0">Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </p>
-                </div>
-            </div>
+        <div class="col-6 col-md-3">
+            <a href="birthday.html" class="cake-category">
+                <img src="img/birthday.jpg" alt="Birthday Cake">
+                <h5>Birthday Cake</h5>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="anniversary.html" class="cake-category">
+                <img src="img/anniversary.jpg" alt="Anniversary Cake">
+                <h5>Anniversary Cake</h5>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="custom.html" class="cake-category">
+                <img src="img/custom.jpg" alt="Custom Cake">
+                <h5>Custom Cake</h5>
+            </a>
         </div>
     </div>
-    <!-- Testimonial End -->
-    
+</div>
+<!-- Cake Categories End -->
+
+
  <?php include "footer.php"; ?>
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
