@@ -62,7 +62,7 @@
   <div class="row g-4" id="cakeList">
 <div class="col-md-4 cake-item" data-price="1450" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/dreamer-clouds.png" class="img-fluid" alt="Little Dreamer Clouds">
+    <img src="img/bcake1.jpeg" class="img-fluid" alt="Little Dreamer Clouds">
     <div class="p-3 text-center">
       <h6 class="cake-name">Little Dreamer Clouds</h6>
       <p class="price">₹1,450</p>
@@ -72,7 +72,7 @@
 
 <div class="col-md-4 cake-item" data-price="1899" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/teddy-picnic.png" class="img-fluid" alt="Teddy Bear Picnic">
+    <img src="img/bcake2.jpeg" class="img-fluid" alt="Teddy Bear Picnic">
     <div class="p-3 text-center">
       <h6 class="cake-name">Teddy Bear Picnic</h6>
       <p class="price">₹1,899</p>
@@ -82,7 +82,7 @@
 
 <div class="col-md-4 cake-item" data-price="1600" data-type="egg" data-flavor="custom">
   <div class="cake-card">
-    <img src="img/gender-reveal.png" class="img-fluid" alt="Gender Reveal Mystery">
+    <img src="img/bcake3.jpeg" class="img-fluid" alt="Gender Reveal Mystery">
     <div class="p-3 text-center">
       <h6 class="cake-name">Gender Reveal Mystery</h6>
       <p class="price">₹1,600</p>
@@ -92,7 +92,7 @@
 
 <div class="col-md-4 cake-item" data-price="1299" data-type="eggless" data-flavor="strawberry">
   <div class="cake-card">
-    <img src="img/pastel-ombre.png" class="img-fluid" alt="Oh Baby! Pastel Ombre">
+    <img src="img/bcake4.jpeg" class="img-fluid" alt="Oh Baby! Pastel Ombre">
     <div class="p-3 text-center">
       <h6 class="cake-name">Oh Baby! Pastel Ombre</h6>
       <p class="price">₹1,299</p>
@@ -102,7 +102,7 @@
 
 <div class="col-md-4 cake-item" data-price="1550" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/twinkle-star.png" class="img-fluid" alt="Twinkle Twinkle Little Star">
+    <img src="img/bcake5.jpeg" class="img-fluid" alt="Twinkle Twinkle Little Star">
     <div class="p-3 text-center">
       <h6 class="cake-name">Twinkle Twinkle Little Star</h6>
       <p class="price">₹1,550</p>
@@ -112,7 +112,7 @@
 
 <div class="col-md-4 cake-item" data-price="2200" data-type="eggless" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/safari-adventure.png" class="img-fluid" alt="Boho Safari Adventure">
+    <img src="img/bcake6.jpeg" class="img-fluid" alt="Boho Safari Adventure">
     <div class="p-3 text-center">
       <h6 class="cake-name">Boho Safari Adventure</h6>
       <p class="price">₹2,200</p>
@@ -122,7 +122,7 @@
 
 <div class="col-md-4 cake-item" data-price="1750" data-type="egg" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/sleeping-elephant.png" class="img-fluid" alt="Sleeping Elephant Cute">
+    <img src="img/bcake7.jpeg" class="img-fluid" alt="Sleeping Elephant Cute">
     <div class="p-3 text-center">
       <h6 class="cake-name">Sleeping Elephant Cute</h6>
       <p class="price">₹1,750</p>
@@ -132,7 +132,7 @@
 
 <div class="col-md-4 cake-item" data-price="1400" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/peach-ruffles.png" class="img-fluid" alt="Peach & Cream Ruffles">
+    <img src="img/bcake8.jpeg" class="img-fluid" alt="Peach & Cream Ruffles">
     <div class="p-3 text-center">
       <h6 class="cake-name">Peach & Cream Ruffles</h6>
       <p class="price">₹1,400</p>
@@ -142,7 +142,7 @@
 
 <div class="col-md-4 cake-item" data-price="1150" data-type="eggless" data-flavor="blueberry">
   <div class="cake-card">
-    <img src="img/blueberry-sky.png" class="img-fluid" alt="Blueberry Sky Delight">
+    <img src="img/bcake9.jpeg" class="img-fluid" alt="Blueberry Sky Delight">
     <div class="p-3 text-center">
       <h6 class="cake-name">Blueberry Sky Delight</h6>
       <p class="price">₹1,150</p>

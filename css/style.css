@@ -760,7 +760,10 @@ padding-right: 35px;
     height: 260px;
     object-fit: cover;
 }
-
+.cake-card1 img {
+    height: 260px;
+    object-fit: cover;
+}
 .cake-card .p-3 {
     flex-grow: 1;
     display: flex;

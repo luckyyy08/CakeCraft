@@ -66,7 +66,7 @@
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="widdingcake.php" class="cake-category">
+            <a href="weddingcake.php" class="cake-category">
                 <img src="img/cake3.png" alt="Wedding Cake">
                 <h6>Wedding</h6>
             </a>
@@ -95,7 +95,7 @@
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="pramotioncake.php" class="cake-category">
+            <a href="promotioncake.php" class="cake-category">
                 <img src="img/cake7.png" alt="Promotion Cake">
                 <h6>Promotion</h6>
             </a>

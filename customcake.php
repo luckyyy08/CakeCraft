@@ -62,7 +62,7 @@
   <div class="row g-4" id="cakeList">
 <div class="col-md-4 cake-item" data-price="2499" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/gamer-controller.png" class="img-fluid" alt="The Gamer’s Controller">
+    <img src="img/ccake1.jpeg" class="img-fluid" alt="The Gamer’s Controller">
     <div class="p-3 text-center">
       <h6 class="cake-name">The Gamer’s Controller</h6>
       <p class="price">₹2,499</p>
@@ -72,7 +72,7 @@
 
 <div class="col-md-4 cake-item" data-price="3200" data-type="egg" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/sports-arena.png" class="img-fluid" alt="Sports Fanatic Arena">
+    <img src="img/ccake2.jpeg" class="img-fluid" alt="Sports Fanatic Arena">
     <div class="p-3 text-center">
       <h6 class="cake-name">Sports Fanatic Arena</h6>
       <p class="price">₹3,200</p>
@@ -82,7 +82,7 @@
 
 <div class="col-md-4 cake-item" data-price="2800" data-type="eggless" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/traveler-suitcase.png" class="img-fluid" alt="Traveler’s Suitcase">
+    <img src="img/ccake3.jpeg" class="img-fluid" alt="Traveler’s Suitcase">
     <div class="p-3 text-center">
       <h6 class="cake-name">Traveler’s Suitcase</h6>
       <p class="price">₹2,800</p>
@@ -92,7 +92,7 @@
 
 <div class="col-md-4 cake-item" data-price="2100" data-type="eggless" data-flavor="strawberry">
   <div class="cake-card">
-    <img src="img/retro-disco.png" class="img-fluid" alt="Retro Disco Fever">
+    <img src="img/ccake4.jpeg" class="img-fluid" alt="Retro Disco Fever">
     <div class="p-3 text-center">
       <h6 class="cake-name">Retro Disco Fever</h6>
       <p class="price">₹2,100</p>
@@ -102,7 +102,7 @@
 
 <div class="col-md-4 cake-item" data-price="1950" data-type="eggless" data-flavor="caramel">
   <div class="cake-card">
-    <img src="img/movie-popcorn.png" class="img-fluid" alt="Movie Night Popcorn">
+    <img src="img/ccake5.jpeg" class="img-fluid" alt="Movie Night Popcorn">
     <div class="p-3 text-center">
       <h6 class="cake-name">Movie Night Popcorn</h6>
       <p class="price">₹1,950</p>
@@ -112,7 +112,7 @@
 
 <div class="col-md-4 cake-item" data-price="2600" data-type="egg" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/space-explorer.png" class="img-fluid" alt="Space Explorer Mars">
+    <img src="img/ccake6.jpeg" class="img-fluid" alt="Space Explorer Mars">
     <div class="p-3 text-center">
       <h6 class="cake-name">Space Explorer Mars</h6>
       <p class="price">₹2,600</p>
@@ -122,7 +122,7 @@
 
 <div class="col-md-4 cake-item" data-price="3500" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/enchanted-forest.png" class="img-fluid" alt="Enchanted Forest Theme">
+    <img src="img/ccake7.jpeg" class="img-fluid" alt="Enchanted Forest Theme">
     <div class="p-3 text-center">
       <h6 class="cake-name">Enchanted Forest Theme</h6>
       <p class="price">₹3,500</p>
@@ -132,7 +132,7 @@
 
 <div class="col-md-4 cake-item" data-price="1800" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/music-symphony.png" class="img-fluid" alt="Music Note Symphony">
+    <img src="img/ccake8.jpeg" class="img-fluid" alt="Music Note Symphony">
     <div class="p-3 text-center">
       <h6 class="cake-name">Music Note Symphony</h6>
       <p class="price">₹1,800</p>
@@ -142,7 +142,7 @@
 
 <div class="col-md-4 cake-item" data-price="4500" data-type="eggless" data-flavor="custom">
   <div class="cake-card">
-    <img src="img/sculpted-portrait.png" class="img-fluid" alt="Artisan Sculpted Portrait">
+    <img src="img/ccake9.jpeg" class="img-fluid" alt="Artisan Sculpted Portrait">
     <div class="p-3 text-center">
       <h6 class="cake-name">Artisan Sculpted Portrait</h6>
       <p class="price">₹4,500</p>

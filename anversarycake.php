@@ -63,7 +63,7 @@
 
  <div class="col-md-4 cake-item" data-price="1249" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/ruby-anniversary.png" class="img-fluid" alt="Ruby Red Anniversary">
+    <img src="img/acake1.jpeg" class="img-fluid" alt="Ruby Red Anniversary">
     <div class="p-3 text-center">
       <h6 class="cake-name">Ruby Red Anniversary</h6>
       <p class="price">₹1,249</p>
@@ -73,7 +73,7 @@
 
 <div class="col-md-4 cake-item" data-price="2499" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/silver-jubilee.png" class="img-fluid" alt="Silver Jubilee Sparkle">
+    <img src="img/acake2.jpeg" class="img-fluid" alt="Silver Jubilee Sparkle">
     <div class="p-3 text-center">
       <h6 class="cake-name">Silver Jubilee Sparkle</h6>
       <p class="price">₹2,499</p>
@@ -83,7 +83,7 @@
 
 <div class="col-md-4 cake-item" data-price="2999" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/golden-years.png" class="img-fluid" alt="Golden Years Vanilla">
+    <img src="img/acake3.jpeg" class="img-fluid" alt="Golden Years Vanilla">
     <div class="p-3 text-center">
       <h6 class="cake-name">Golden Years Vanilla</h6>
       <p class="price">₹2,999</p>
@@ -93,7 +93,7 @@
 
 <div class="col-md-4 cake-item" data-price="1100" data-type="egg" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/eternal-love.png" class="img-fluid" alt="Eternal Love Chocolate">
+    <img src="img/acake4.jpeg" class="img-fluid" alt="Eternal Love Chocolate">
     <div class="p-3 text-center">
       <h6 class="cake-name">Eternal Love Chocolate</h6>
       <p class="price">₹1,100</p>
@@ -103,7 +103,7 @@
 
 <div class="col-md-4 cake-item" data-price="1599" data-type="eggless" data-flavor="custom">
   <div class="cake-card">
-    <img src="img/photo-cake.png" class="img-fluid" alt="Sweet Memories Photo Cake">
+    <img src="img/acake5.jpeg" class="img-fluid" alt="Sweet Memories Photo Cake">
     <div class="p-3 text-center">
       <h6 class="cake-name">Sweet Memories Photo Cake</h6>
       <p class="price">₹1,599</p>
@@ -113,7 +113,7 @@
 
 <div class="col-md-4 cake-item" data-price="999" data-type="eggless" data-flavor="strawberry">
   <div class="cake-card">
-    <img src="img/first-year-bloom.png" class="img-fluid" alt="First Year Bloom">
+    <img src="img/acake6.jpeg" class="img-fluid" alt="First Year Bloom">
     <div class="p-3 text-center">
       <h6 class="cake-name">First Year Bloom</h6>
       <p class="price">₹999</p>
@@ -123,7 +123,7 @@
 
 <div class="col-md-4 cake-item" data-price="3500" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/diamond-jubilee.png" class="img-fluid" alt="Diamond Jubilee White">
+    <img src="img/acake7.jpeg" class="img-fluid" alt="Diamond Jubilee White">
     <div class="p-3 text-center">
       <h6 class="cake-name">Diamond Jubilee White</h6>
       <p class="price">₹3,500</p>
@@ -133,7 +133,7 @@
 
 <div class="col-md-4 cake-item" data-price="1050" data-type="egg" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/timeless-toffee.png" class="img-fluid" alt="Timeless Toffee Crunch">
+    <img src="img/acake8.jpeg" class="img-fluid" alt="Timeless Toffee Crunch">
     <div class="p-3 text-center">
       <h6 class="cake-name">Timeless Toffee Crunch</h6>
       <p class="price">₹1,050</p>
@@ -143,7 +143,7 @@
 
 <div class="col-md-4 cake-item" data-price="1350" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/heart-to-heart.png" class="img-fluid" alt="Heart-to-Heart Velvet">
+    <img src="img/acake9.jpeg" class="img-fluid" alt="Heart-to-Heart Velvet">
     <div class="p-3 text-center">
       <h6 class="cake-name">Heart-to-Heart Velvet</h6>
       <p class="price">₹1,350</p>

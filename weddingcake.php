@@ -63,7 +63,7 @@
 
  <div class="col-md-4 cake-item" data-price="8500" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/grand-ivory.png" class="img-fluid" alt="Grand Ivory Cascade">
+    <img src="img/wcake1.jpeg" class="img-fluid" alt="Grand Ivory Cascade">
     <div class="p-3 text-center">
       <h6 class="cake-name">Grand Ivory Cascade</h6>
       <p class="price">₹8,500</p>
@@ -73,7 +73,7 @@
 
 <div class="col-md-4 cake-item" data-price="9200" data-type="eggless" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/victorian-lace.png" class="img-fluid" alt="Vintage Victorian Lace">
+    <img src="img/wcake2.jpeg" class="img-fluid" alt="Vintage Victorian Lace">
     <div class="p-3 text-center">
       <h6 class="cake-name">Vintage Victorian Lace</h6>
       <p class="price">₹9,200</p>
@@ -83,7 +83,7 @@
 
 <div class="col-md-4 cake-item" data-price="7800" data-type="egg" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/white-truffle.png" class="img-fluid" alt="White Truffle Elegance">
+    <img src="img/wcake3.jpeg" class="img-fluid" alt="White Truffle Elegance">
     <div class="p-3 text-center">
       <h6 class="cake-name">White Truffle Elegance</h6>
       <p class="price">₹7,800</p>
@@ -93,7 +93,7 @@
 
 <div class="col-md-4 cake-item" data-price="12500" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/orchid-tower.png" class="img-fluid" alt="Sugar Orchid Tower">
+    <img src="img/wcake4.jpeg" class="img-fluid" alt="Sugar Orchid Tower">
     <div class="p-3 text-center">
       <h6 class="cake-name">Sugar Orchid Tower</h6>
       <p class="price">₹12,500</p>
@@ -103,7 +103,7 @@
 
 <div class="col-md-4 cake-item" data-price="10500" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/silver-leaf.png" class="img-fluid" alt="Silver Leaf Majesty">
+    <img src="img/wcake5.jpeg" class="img-fluid" alt="Silver Leaf Majesty">
     <div class="p-3 text-center">
       <h6 class="cake-name">Silver Leaf Majesty</h6>
       <p class="price">₹10,500</p>
@@ -113,7 +113,7 @@
 
 <div class="col-md-4 cake-item" data-price="8900" data-type="egg" data-flavor="strawberry">
   <div class="cake-card">
-    <img src="img/wildflower-tier.png" class="img-fluid" alt="Pressed Wildflower Tier">
+    <img src="img/wcake6.jpeg" class="img-fluid" alt="Pressed Wildflower Tier">
     <div class="p-3 text-center">
       <h6 class="cake-name">Pressed Wildflower Tier</h6>
       <p class="price">₹8,900</p>
@@ -123,7 +123,7 @@
 
 <div class="col-md-4 cake-item" data-price="9800" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/gold-foil.png" class="img-fluid" alt="Classic Gold Foil Ribbon">
+    <img src="img/wcake7.jpeg" class="img-fluid" alt="Classic Gold Foil Ribbon">
     <div class="p-3 text-center">
       <h6 class="cake-name">Classic Gold Foil Ribbon</h6>
       <p class="price">₹9,800</p>
@@ -133,7 +133,7 @@
 
 <div class="col-md-4 cake-item" data-price="6500" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/satin-smooth.png" class="img-fluid" alt="Minimalist Satin Smooth">
+    <img src="img/wcake8.jpeg" class="img-fluid" alt="Minimalist Satin Smooth">
     <div class="p-3 text-center">
       <h6 class="cake-name">Minimalist Satin Smooth</h6>
       <p class="price">₹6,500</p>
@@ -143,7 +143,7 @@
 
 <div class="col-md-4 cake-item" data-price="15000" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/royal-grandeur.png" class="img-fluid" alt="Royal Grandeur Multi-Tier">
+    <img src="img/wcake9.jpeg" class="img-fluid" alt="Royal Grandeur Multi-Tier">
     <div class="p-3 text-center">
       <h6 class="cake-name">Royal Grandeur Multi-Tier</h6>
       <p class="price">₹15,000</p>

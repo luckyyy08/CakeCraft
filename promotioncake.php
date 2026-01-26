@@ -62,7 +62,7 @@
   <div class="row g-4" id="cakeList">
 <div class="col-md-4 cake-item" data-price="1499" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/corner-office.png" class="img-fluid" alt="The Corner Office Cake">
+    <img src="img/pcake1.jpeg" class="img-fluid" alt="The Corner Office Cake">
     <div class="p-3 text-center">
       <h6 class="cake-name">The Corner Office Cake</h6>
       <p class="price">₹1,499</p>
@@ -72,7 +72,7 @@
 
 <div class="col-md-4 cake-item" data-price="1850" data-type="eggless" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/ladder-success.png" class="img-fluid" alt="Ladder to Success">
+    <img src="img/pcake2.jpeg" class="img-fluid" alt="Ladder to Success">
     <div class="p-3 text-center">
       <h6 class="cake-name">Ladder to Success</h6>
       <p class="price">₹1,850</p>
@@ -82,7 +82,7 @@
 
 <div class="col-md-4 cake-item" data-price="999" data-type="egg" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/corporate-boss.png" class="img-fluid" alt="Corporate Boss Black Forest">
+    <img src="img/pcake3.jpeg" class="img-fluid" alt="Corporate Boss Black Forest">
     <div class="p-3 text-center">
       <h6 class="cake-name">Corporate Boss Black Forest</h6>
       <p class="price">₹999</p>
@@ -92,7 +92,7 @@
 
 <div class="col-md-4 cake-item" data-price="850" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/next-level-lemon.png" class="img-fluid" alt="Next Level Lemon Tart">
+    <img src="img/pcake4.jpeg" class="img-fluid" alt="Next Level Lemon Tart">
     <div class="p-3 text-center">
       <h6 class="cake-name">Next Level Lemon Tart</h6>
       <p class="price">₹850</p>
@@ -102,7 +102,7 @@
 
 <div class="col-md-4 cake-item" data-price="1200" data-type="eggless" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/hard-work.png" class="img-fluid" alt="Hard Work Pays Off">
+    <img src="img/pcake5.jpeg" class="img-fluid" alt="Hard Work Pays Off">
     <div class="p-3 text-center">
       <h6 class="cake-name">Hard Work Pays Off</h6>
       <p class="price">₹1,200</p>
@@ -112,7 +112,7 @@
 
 <div class="col-md-4 cake-item" data-price="2200" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/office-pinata.png" class="img-fluid" alt="Office Party Piñata">
+    <img src="img/pcake6.jpeg" class="img-fluid" alt="Office Party Piñata">
     <div class="p-3 text-center">
       <h6 class="cake-name">Office Party Piñata</h6>
       <p class="price">₹2,200</p>
@@ -122,7 +122,7 @@
 
 <div class="col-md-4 cake-item" data-price="1100" data-type="egg" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/strategic-success.png" class="img-fluid" alt="Strategic Success Sponge">
+    <img src="img/pcake7.jpeg" class="img-fluid" alt="Strategic Success Sponge">
     <div class="p-3 text-center">
       <h6 class="cake-name">Strategic Success Sponge</h6>
       <p class="price">₹1,100</p>
@@ -132,7 +132,7 @@
 
 <div class="col-md-4 cake-item" data-price="2500" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/executive-suite.png" class="img-fluid" alt="The Executive Suite">
+    <img src="img/pcake8.jpeg" class="img-fluid" alt="The Executive Suite">
     <div class="p-3 text-center">
       <h6 class="cake-name">The Executive Suite</h6>
       <p class="price">₹2,500</p>
@@ -142,7 +142,7 @@
 
 <div class="col-md-4 cake-item" data-price="1350" data-type="eggless" data-flavor="coffee">
   <div class="cake-card">
-    <img src="img/moving-up-mocha.png" class="img-fluid" alt="Moving On Up Mocha">
+    <img src="img/pcake9.jpeg" class="img-fluid" alt="Moving On Up Mocha">
     <div class="p-3 text-center">
       <h6 class="cake-name">Moving On Up Mocha</h6>
       <p class="price">₹1,350</p>
