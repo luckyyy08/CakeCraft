@@ -8,6 +8,11 @@
 <body>
   <?php include"header.php";?>
 
+   <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 700px;">
+        
+        <h1 class="display-4 text-uppercase">Birthday Cake's</h1>
+    </div>
+
 <div class="container-fluid py-5">
   <div class="container">
     <div class="row">
