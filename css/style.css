@@ -334,6 +334,11 @@ h6,
     background-size: cover;
     background-position: center;
 }
+.hero-header1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../img/deal1.png");
+    background-size: cover;
+    background-position: center;
+}
 
 @media (max-width: 768px) {
     .hero-logo {
@@ -632,8 +637,8 @@ padding-right: 35px;
 }
 
 .cake-category img {
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid var(--primary);
@@ -663,3 +668,5 @@ padding-right: 35px;
         height: 140px;
     }
 }
+
+

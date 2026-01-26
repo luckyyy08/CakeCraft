@@ -35,93 +35,248 @@
 <body>
 <?php include "header.php"; ?>
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="font-secondary text-primary mb-4">Super Crispy</h1>
-                    <h1 class="display-1 text-uppercase text-white mb-4">CakeCraft</h1>
-                    <h1 class="text-uppercase text-white">The Best Cake In Nashik</h1>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="" class="btn btn-primary border-inner py-3 px-5 me-5">BOOK NOW...!!</a>
-                        <!-- <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button> -->
-                        <!-- <h5 class="font-weight-normal text-white m-0 ms-4 d-none d-sm-block">Play Video</h5> -->
+   <!-- Hero Slider Start -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+    <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active hero-header1">
+            
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="font-secondary text-primary mb-3">Special Offer 🎉</h1>
+                        <h1 class="display-1 text-uppercase text-white mb-3">Wedding Cakes</h1>
+                        <h2 class="text-white mb-4">Flat <span class="text-primary">20% OFF</span> on Premium Designs</h2>
+                        <a href="#" class="btn btn-primary border-inner py-3 px-5">
+                            BOOK NOW
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Hero End -->
 
-
-
-
-
-
-
- 
-
- 
-
-    <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5">
-        <div class="container py-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                        <h2 class="text-primary font-secondary">Special Kombo Pack</h2>
-                        <h1 class="display-4 text-uppercase text-white">Super Crispy Cakes</h1>
+        <!-- Slide 2 -->
+        <div class="carousel-item hero-header" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/deal2.png');">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="font-secondary text-primary mb-3">Limited Time 🎂</h1>
+                        <h1 class="display-1 text-uppercase text-white mb-3">Birthday Cakes</h1>
+                        <h2 class="text-white mb-4">Buy 1 Get <span class="text-primary">Free Candles</span></h2>
+                        <a href="#" class="btn btn-primary border-inner py-3 px-5">
+                            ORDER NOW
+                        </a>
                     </div>
-                    <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">Shop Now</a>
-                    <a href="" class="btn btn-dark border-inner py-3 px-5">Read More</a>
                 </div>
             </div>
         </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item hero-header" style="background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('img/deal3.png');">
+            <div class="container py-5">
+                <div class="row">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="font-secondary text-primary mb-3">Exclusive 🎁</h1>
+                        <h1 class="display-1 text-uppercase text-white mb-3">Custom Cakes</h1>
+                        <h2 class="text-white mb-4">Design Your Dream Cake</h2>
+                        <a href="#" class="btn btn-primary border-inner py-3 px-5">
+                            CUSTOMIZE NOW
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
-    <!-- Offer End -->
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+<!-- Hero Slider End -->
+
+
+
+
+
 <!-- Cake Categories Start -->
 <div class="container py-5">
-    <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-        <h2 class="text-primary font-secondary">Categories</h2>
-        <h1 class="display-4 text-uppercase">Choose Your Cake</h1>
+    <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 700px;">
+        <h2 class="text-primary font-secondary">Occasions</h2>
+        <h1 class="display-4 text-uppercase">Cakes for Every Moment</h1>
     </div>
 
+
     <div class="row justify-content-center text-center g-4">
+    
+    
         <div class="col-6 col-md-3">
-            <a href="wedding.html" class="cake-category">
-                <img src="img/logo1.png" alt="Wedding Cake">
-                <h5>Wedding Cake</h5>
+            <a href="birthdaycake.php" class="cake-category">
+                <img src="img/cake1.png" alt="Birthday Cake">
+                <h6>Birthday</h6>
+            </a>
+        </div>
+
+    <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/cake2.png" alt="Engagement Cake">
+                <h6>Engagement</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="birthday.html" class="cake-category">
-                <img src="img/logo1.png" alt="Birthday Cake">
-                <h5>Birthday Cake</h5>
+            <a href="#" class="cake-category">
+                <img src="img/cake3.png" alt="Wedding Cake">
+                <h6>Wedding</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="anniversary.html" class="cake-category">
-                <img src="img/anniversary.jpg" alt="Anniversary Cake">
-                <h5>Anniversary Cake</h5>
+            <a href="#" class="cake-category">
+                <img src="img/cake4.png" alt="Anniversary Cake">
+                <h6>Anniversary</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="custom.html" class="cake-category">
-                <img src="img/custom.jpg" alt="Custom Cake">
-                <h5>Custom Cake</h5>
+            <a href="#" class="cake-category">
+                <img src="img/cake5.png" alt="Baby Shower Cake">
+                <h6>Baby Shower</h6>
             </a>
         </div>
+        
+      
+        <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/cake6.png" alt="Graduation Cake">
+                <h6>Career / Graduation</h6>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/cake7.png" alt="Promotion Cake">
+                <h6>Promotion</h6>
+            </a>
+        </div>
+
+          <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/cake8.png" alt="Custom Cake">
+                <h6>Custom Cake</h6>
+            </a>
+        </div>
+
     </div>
 </div>
 <!-- Cake Categories End -->
+
+<!--  More Categories Start -->
+<div class="container py-5">
+    <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 700px;">
+        <h2 class="text-primary font-secondary">More Than Just Cakes</h2>
+        <h1 class="display-4 text-uppercase">Complete Your Celebration</h1>
+    </div>
+
+
+    <div class="row justify-content-center text-center g-4">
+    
+    
+        <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/more1.png" alt="Birthday Cake">
+                <h6>Candles & Poppers</h6>
+            </a>
+        </div>
+
+    <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/more2.png" alt="Engagement Cake">
+                <h6>Balloon Decor</h6>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/more3.png" alt="Wedding Cake">
+                <h6>Gift Hampers</h6>
+            </a>
+        </div>
+
+        <div class="col-6 col-md-3">
+            <a href="#" class="cake-category">
+                <img src="img/more4.png" alt="Anniversary Cake">
+                <h6>Celebration Hall</h6>
+            </a>
+        </div>
+
+      
+    </div>
+</div>
+<!-- More Categories End -->
+
+<!-- <div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 700px;">
+            <h2 class="text-primary font-secondary">More Than Just Cakes</h2>
+            <h1 class="display-4 text-uppercase">Complete Your Celebration</h1>
+        </div>
+        <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white text-center p-4 h-100 shadow-sm">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-fire-alt fa-2x"></i>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Candles & Poppers</h4>
+                    <p>Sparklers, numeric candles, and confetti poppers to light up the moment.</p>
+                    <a class="text-uppercase fw-bold text-primary" href="#">View Shop <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white text-center p-4 h-100 shadow-sm">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-bullseye fa-2x"></i>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Balloon Decor</h4>
+                    <p>Professional balloon arches and room decorations for surprises.</p>
+                    <a class="text-uppercase fw-bold text-primary" href="#">Book Decor <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white text-center p-4 h-100 shadow-sm">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-gift fa-2x"></i>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Gift Hampers</h4>
+                    <p>Curated boxes with chocolates, cookies, and personalized treats.</p>
+                    <a class="text-uppercase fw-bold text-primary" href="#">Browse Gifts <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="service-item bg-white text-center p-4 h-100 shadow-sm">
+                    <div class="d-inline-flex align-items-center justify-content-center bg-primary text-white rounded-circle mb-4" style="width: 80px; height: 80px;">
+                        <i class="fa fa-building fa-2x"></i>
+                    </div>
+                    <h4 class="text-uppercase mb-3">Celebration Hall</h4>
+                    <p>Private AC hall available for birthdays and small gatherings.</p>
+                    <a class="text-uppercase fw-bold text-primary" href="#">Check Availability <i class="fa fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  -->
+
+ 
+
 
 
  <?php include "footer.php"; ?>
