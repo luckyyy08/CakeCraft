@@ -94,14 +94,14 @@
     <div class="row justify-content-center text-center g-4">
         <div class="col-6 col-md-3">
             <a href="wedding.html" class="cake-category">
-                <img src="img/wedding.jpg" alt="Wedding Cake">
+                <img src="img/logo1.png" alt="Wedding Cake">
                 <h5>Wedding Cake</h5>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
             <a href="birthday.html" class="cake-category">
-                <img src="img/birthday.jpg" alt="Birthday Cake">
+                <img src="img/logo1.png" alt="Birthday Cake">
                 <h5>Birthday Cake</h5>
             </a>
         </div>
