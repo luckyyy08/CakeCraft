@@ -61,92 +61,92 @@
      <div class="col-lg-9">
   <div class="row g-4" id="cakeList">
 
- <div class="col-md-4 cake-item" data-price="749" data-type="eggless" data-flavor="vanilla">
+<div class="col-md-4 cake-item" data-price="899" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/funfetti-fiesta.png" class="img-fluid" alt="Funfetti Fiesta">
+    <img src="img/gcake1.jpeg" class="img-fluid" alt="Smarty Pants Chocolate">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Funfetti Fiesta</h6>
-      <p class="price">₹749</p>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-4 cake-item" data-price="899" data-type="egg" data-flavor="chocolate">
-  <div class="cake-card">
-    <img src="img/chocolate-overload.png" class="img-fluid" alt="Chocolate Overload">
-    <div class="p-3 text-center">
-      <h6 class="cake-name">Chocolate Overload</h6>
+      <h6 class="cake-name">Smarty Pants Chocolate</h6>
       <p class="price">₹899</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="799" data-type="eggless" data-flavor="vanilla">
+<div class="col-md-4 cake-item" data-price="1250" data-type="egg" data-flavor="vanilla">
   <div class="cake-card">
-    <img src="img/rainbow-sprinkle.png" class="img-fluid" alt="Rainbow Sprinkle Surprise">
+    <img src="img/gcake2.jpeg" class="img-fluid" alt="Cap & Gown Glory">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Rainbow Sprinkle Surprise</h6>
-      <p class="price">₹799</p>
+      <h6 class="cake-name">Cap & Gown Glory</h6>
+      <p class="price">₹1,250</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="849" data-type="eggless" data-flavor="oreo">
+<div class="col-md-4 cake-item" data-price="1100" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/cookies-cream.png" class="img-fluid" alt="Cookies & Cream Dream">
+    <img src="img/gcake3.jpeg" class="img-fluid" alt="Future Leader Fruit Cake">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Cookies & Cream Dream</h6>
-      <p class="price">₹849</p>
+      <h6 class="cake-name">Future Leader Fruit Cake</h6>
+      <p class="price">₹1,100</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="699" data-type="egg" data-flavor="strawberry">
+<div class="col-md-4 cake-item" data-price="950" data-type="eggless" data-flavor="butterscotch">
   <div class="cake-card">
-    <img src="img/strawberry-shortcake.png" class="img-fluid" alt="Strawberry Shortcake Classic">
+    <img src="img/gcake4.jpeg" class="img-fluid" alt="Diploma Scroll Delight">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Strawberry Shortcake Classic</h6>
-      <p class="price">₹699</p>
+      <h6 class="cake-name">Diploma Scroll Delight</h6>
+      <p class="price">₹950</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="1099" data-type="eggless" data-flavor="chocolate">
+<div class="col-md-4 cake-item" data-price="1800" data-type="eggless" data-flavor="chocolate">
   <div class="cake-card">
-    <img src="img/nutella-hazelnut.png" class="img-fluid" alt="Nutella Hazelnut Blast">
+    <img src="img/gcake5.jpeg" class="img-fluid" alt="The World Awaits Map Cake">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Nutella Hazelnut Blast</h6>
-      <p class="price">₹1,099</p>
+      <h6 class="cake-name">The World Awaits Map Cake</h6>
+      <p class="price">₹1,800</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="949" data-type="eggless" data-flavor="caramel">
+<div class="col-md-4 cake-item" data-price="850" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/caramel-popcorn.png" class="img-fluid" alt="Caramel Popcorn Crunch">
+    <img src="img/gcake7.jpeg" class="img-fluid" alt="Bright Future Lemon">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Caramel Popcorn Crunch</h6>
-      <p class="price">₹949</p>
+      <h6 class="cake-name">Bright Future Lemon</h6>
+      <p class="price">₹850</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="1199" data-type="eggless" data-flavor="strawberry">
+<div class="col-md-4 cake-item" data-price="2100" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/unicorn-swirl.png" class="img-fluid" alt="Magic Unicorn Swirl">
+    <img src="img/gcake6.jpeg" class="img-fluid" alt="Class of 2026 Masterpiece">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Magic Unicorn Swirl</h6>
-      <p class="price">₹1,199</p>
+      <h6 class="cake-name">Class of 2026 Masterpiece</h6>
+      <p class="price">₹2,100</p>
     </div>
   </div>
 </div>
 
-<div class="col-md-4 cake-item" data-price="1299" data-type="egg" data-flavor="chocolate">
+<div class="col-md-4 cake-item" data-price="1050" data-type="egg" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/galaxy-mirror.png" class="img-fluid" alt="Galaxy Mirror Glaze">
+    <img src="img/gcake8.jpeg" class="img-fluid" alt="Dream Big Blueberry">
     <div class="p-3 text-center">
-      <h6 class="cake-name">Galaxy Mirror Glaze</h6>
-      <p class="price">₹1,299</p>
+      <h6 class="cake-name">Dream Big Blueberry</h6>
+      <p class="price">₹1,050</p>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4 cake-item" data-price="1650" data-type="eggless" data-flavor="vanilla">
+  <div class="cake-card">
+    <img src="img/gcake9.jpeg" class="img-fluid" alt="Achievement Award Gold">
+    <div class="p-3 text-center">
+      <h6 class="cake-name">Achievement Award Gold</h6>
+      <p class="price">₹1,650</p>
     </div>
   </div>
 </div>
