@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+// जर युजर लॉगिन नसेल (सेशन व्हेरिएबल नसेल), तर त्याला लॉगिन पेजवर परत पाठवा
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php"); // इथे तुमच्या लॉगिन पेजचे नाव टाका
+    exit();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 

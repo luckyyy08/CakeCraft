@@ -154,27 +154,65 @@ $user = $stmt->get_result()->fetch_assoc();
 
         <!-- LEFT SIDEBAR -->
         <div class="col-md-3 sidebar">
-            <a href="profile.php" class="active"><i class="fas fa-box me-2"></i> Orders</a>
-            <a href="#"><i class="fas fa-heart me-2"></i> Favourites</a>
-            <a href="#"><i class="fas fa-map-marker-alt me-2"></i> Addresses</a>
-            <a href="#"><i class="fas fa-cog me-2"></i> Settings</a>
-            <a href="logout.php" class="text-danger">
-                <i class="fas fa-sign-out-alt me-2"></i> Logout
-            </a>
-        </div>
+    <a href="index.php"><i class="fas fa-home me-2"></i> Home</a>
+    
+    <a href="javascript:void(0)" class="nav-link active" onclick="showSection('orders', this)">
+        <i class="fas fa-box me-2"></i> Orders
+    </a>
+    <a href="javascript:void(0)" class="nav-link" onclick="showSection('favourites', this)">
+        <i class="fas fa-heart me-2"></i> Favourites
+    </a>
+    <a href="javascript:void(0)" class="nav-link" onclick="showSection('addresses', this)">
+        <i class="fas fa-map-marker-alt me-2"></i> Addresses
+    </a>
+    <a href="javascript:void(0)" class="nav-link" onclick="showSection('settings', this)">
+        <i class="fas fa-cog me-2"></i> Settings
+    </a>
+    
+    <hr>
+    <a href="logout.php" class="text-danger"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+</div>
 
         <!-- RIGHT CONTENT -->
-        <div class="col-md-9">
-            <div class="empty-box">
-                <img src="img/no-order.png" width="120" class="mb-3">
-                <h5>No Orders</h5>
-                <p>You haven’t placed any order yet.</p>
-                <a href="index.php" class="btn btn-primary btn-sm mt-2">
-                    Order Cakes 🍰
-                </a>
-            </div>
+       
+<div class="col-md-9 bg-white p-4">
+    
+    <div id="section-orders" class="content-section">
+        <div class="empty-box">
+            <img src="img/no-order.png" width="120" class="mb-3">
+            <h5>My Orders</h5>
+            <p>You haven’t placed any order yet.</p>
+            <a href="index.php" class="btn btn-warning btn-sm mt-2 px-4 text-white">Order Cakes 🍰</a>
         </div>
+    </div>
 
+    <div id="section-favourites" class="content-section" style="display:none;">
+        <h4>My Favourites</h4>
+        <hr>
+        <div class="text-center py-5">
+            <i class="fas fa-heart fa-3x text-light mb-3"></i>
+            <p>Your wishlist is empty!</p>
+        </div>
+    </div>
+
+    <div id="section-addresses" class="content-section" style="display:none;">
+        <h4>Saved Addresses</h4>
+        <hr>
+        <button class="btn btn-outline-warning btn-sm mb-3">+ Add New Address</button>
+        <p class="text-muted">No addresses saved yet.</p>
+    </div>
+
+    <div id="section-settings" class="content-section" style="display:none;">
+        <h4>Account Settings</h4>
+        <hr>
+        <div class="form-check form-switch mb-3">
+            <input class="form-check-input" type="checkbox" id="notify">
+            <label class="form-check-label" for="notify">Email Notifications</label>
+        </div>
+        <button class="btn btn-danger btn-sm">Deactivate Account</button>
+    </div>
+
+</div>
     </div>
 </div>
 
@@ -224,6 +262,20 @@ function openProfileEdit() {
 function closeProfileEdit() {
     document.getElementById("profilePanel").classList.remove("active");
     document.getElementById("profileOverlay").style.display = "none";
+}
+
+function showSection(sectionId, element) {
+    // 1. सर्व कंटेंट सेक्शन्स लपवा
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(sec => sec.style.display = 'none');
+
+    // 2. सिलेक्ट केलेला सेक्शन दाखवा
+    document.getElementById('section-' + sectionId).style.display = 'block';
+
+    // 3. साइडबारची 'active' क्लास अपडेट करा
+    const navLinks = document.querySelectorAll('.sidebar a');
+    navLinks.forEach(link => link.classList.remove('active'));
+    element.classList.add('active');
 }
 </script>
 

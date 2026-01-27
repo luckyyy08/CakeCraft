@@ -1,5 +1,11 @@
 <?php
 session_start();
+
+// जर युजर आधीच लॉगिन असेल, तर त्याला थेट डॅशबोर्ड किंवा होम पेजवर पाठवा
+if (isset($_SESSION['user_id'])) {
+    header("Location: home.php"); // इथे तुमच्या होम पेजचे नाव टाका (उदा. dashboard.php किंवा products.php)
+    exit();
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -118,7 +124,7 @@ session_start();
 <!-- About End -->
 
 <!-- Testimonial Start -->
-<div class="container-fluid py-5">
+<!-- <div class="container-fluid py-5">
     <div class="container">
         <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
             <h2 class="text-primary font-secondary">Testimonial</h2>
@@ -139,7 +145,7 @@ session_start();
                 </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Testimonial End -->
 
 <?php include "footer.php"; ?>
