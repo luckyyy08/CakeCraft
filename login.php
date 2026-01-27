@@ -39,31 +39,25 @@
                 <h2 class="font-secondary text-light">Welcome Back</h2>
                 <p class="text-muted">Login to continue sweetness 🍰</p>
             </div>
+<form action="login_acc.php" method="POST">
+<!-- Email -->
+    <div class="input-group mb-3">
+        <span class="input-group-text">
+            <i class="fas fa-envelope"></i>
+        </span>
+        <input type="email" name="email" class="form-control"
+               placeholder="Email Address" required>
+    </div>
+<!-- Password with Show/Hide -->
+    <div class="input-group mb-4">
+        <span class="input-group-text">
+            <i class="fas fa-lock"></i>
+        </span>
+        <input type="password" name="password" class="form-control"
+               placeholder="Password" required>
+    </div>
 
-            <form action="login_acc.php" method="POST">
-                <!-- Email -->
-                <div class="input-group mb-3">
-                    <span class="input-group-text">
-                        <i class="fas fa-envelope"></i>
-                    </span>
-                    <input type="email" id="loginEmail" class="form-control"
-                        placeholder="Email Address" required>
-                </div>
-
-                <!-- Password with Show/Hide -->
-              <div class="input-group mb-4">
-    <span class="input-group-text">
-        <i class="fas fa-lock"></i>
-    </span>
-
-    <input type="password" id="loginPassword" class="form-control"
-        placeholder="Password" required>
-
-
-</div>
-
-
-                <!-- Remember & Forgot -->
+     <!-- Remember & Forgot -->
                 <div class="d-flex justify-content-between mb-4">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="rememberMe">
@@ -75,21 +69,19 @@
                         Forgot Password?
                     </a>
                 </div>
-
-                <!-- Button -->
-                <button type="submit" class="btn auth-btn w-100 mb-3">
-                    Login
-                </button>
-
-                <!-- Signup -->
+    <button type="submit" class="btn auth-btn w-100 mb-3">
+        Login
+    </button>
+     <!-- Signup -->
                 <p class="text-center text-secondary">
                     Don’t have an account?
                     <a href="create.php" class="auth-link">Create one</a>
                 </p>
-            </form>
 
-        </div>
-    </div>
+</form>
+
+       
+          
 
     <!-- JS -->
     <script>

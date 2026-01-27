@@ -16,7 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         $_SESSION['user_name'] = $user['fullname'];
-        header("Location: index.php");
+        header("Location: home.php");
         exit();
     } else {
         echo "<script>alert('Invalid Email or Password'); window.history.back();</script>";
@@ -26,3 +26,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $conn->close();
 }
 ?>
+

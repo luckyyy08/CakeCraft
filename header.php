@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,38 +37,7 @@
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <!-- <div class="container-fluid px-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>CakeCraft@gmail.com</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center bg-primary border-inner py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="m-0 text-uppercase text-white"><i
-                                class="fa fa-birthday-cake fs-1 text-dark me-3"></i>CakeCraft</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>+012 345 6789</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Topbar End -->
+    
 
 
     <!-- Navbar Start -->
@@ -95,32 +68,68 @@
                 <span class="cart-count">2</span>
             </a> -->
 
-            <!-- User Dropdown -->
+ <!-- User Dropdown -->
 <div class="dropdown user-dropdown">
     <a href="#" class="user-avatar dropdown-toggle" data-bs-toggle="dropdown">
         <i class="fas fa-user-circle"></i>
     </a>
 
     <ul class="dropdown-menu dropdown-menu-end user-menu">
-        <li class="dropdown-header text-center">
-            Guest User
-        </li>
 
-        <li>
-            <a class="dropdown-item" href="login.php">
-                <i class="fas fa-sign-in-alt me-2"></i> Login
-            </a>
-        </li>
+        <?php if (isset($_SESSION['user_id'])): ?>
 
-        <li>
-            <a class="dropdown-item" href="create_acc.php">
-                <i class="fas fa-user-plus me-2"></i> Register
-            </a>
-        </li>
+            <!-- Logged In User -->
+            <li class="dropdown-header text-center fw-bold">
+                👋 Hi, <?php echo $_SESSION['user_name']; ?>
+            </li>
 
-        <li><hr class="dropdown-divider"></li>
+            <li>
+                <a class="dropdown-item" href="profile.php">
+                    <i class="fas fa-user me-2"></i> My Profile
+                </a>
+            </li>
 
-      
+            <li>
+                <a class="dropdown-item" href="orders.php">
+                    <i class="fas fa-box me-2"></i> My Orders
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="favorites.php">
+                    <i class="fas fa-heart me-2"></i> Favorites
+                </a>
+            </li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <li>
+                <a class="dropdown-item text-danger" href="logout.php">
+                    <i class="fas fa-sign-out-alt me-2"></i> Logout
+                </a>
+            </li>
+
+        <?php else: ?>
+
+            <!-- Guest User -->
+            <li class="dropdown-header text-center">
+                Guest User
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="login.php">
+                    <i class="fas fa-sign-in-alt me-2"></i> Login
+                </a>
+            </li>
+
+            <li>
+                <a class="dropdown-item" href="create.php">
+                    <i class="fas fa-user-plus me-2"></i> Register
+                </a>
+            </li>
+
+        <?php endif; ?>
+
     </ul>
 </div>
 

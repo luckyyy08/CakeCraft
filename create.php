@@ -38,42 +38,41 @@
             <h2 class="font-secondary text-light">Create Account</h2>
             <p class="text-muted">Join CakeCraft & make moments sweeter 🎂</p>
         </div>
+<form action="create_acc.php" method="POST">
 
-        <form action="create_acc.php" action="POST">
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                <input type="text" class="form-control" placeholder="Full Name" required>
-            </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-user"></i></span>
+        <input type="text" name="fullname" class="form-control" placeholder="Full Name" required>
+    </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                <input type="email" class="form-control" placeholder="Email Address" required>
-            </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+        <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+    </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fas fa-phone"></i></span>
-                <input type="tel" class="form-control" placeholder="Mobile Number" required>
-            </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-phone"></i></span>
+        <input type="tel" name="mobile" class="form-control" placeholder="Mobile Number" required>
+    </div>
 
-            <div class="input-group mb-3">
-                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                <input type="password" class="form-control" placeholder="Password" required>
-            </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        <input type="password" name="password" class="form-control" placeholder="Password" required>
+    </div>
 
-            <div class="input-group mb-4">
-                <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                <input type="password" class="form-control" placeholder="Confirm Password" required>
-            </div>
+    <div class="input-group mb-4">
+        <span class="input-group-text"><i class="fas fa-lock"></i></span>
+        <input type="password" name="confirm_password" class="form-control" placeholder="Confirm Password" required>
+    </div>
 
-            <button class="btn auth-btn w-100 mb-3">
-                Create Account
-            </button>
+    <button type="submit" class="btn auth-btn w-100 mb-3">
+        Create Account
+    </button>
 
-            <p class="text-center text-secondary">
-                Already have an account?
-                <a href="login_acc.php" class="auth-link">Login</a>
-            </p>
-        </form>
+    <p class="text-center text-secondary"> Already have an account? <a href="login.php" class="auth-link">Login</a> </p>
+
+</form>
+
     </div>
 </div>
 </body>

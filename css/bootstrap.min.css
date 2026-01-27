@@ -84,7 +84,7 @@ h6,
     font-family: "Oswald", sans-serif;
     font-weight: 500;
     line-height: 1.2;
-    color: #2B2825
+    color: #5A2D1D
 }
 
 h1,
@@ -3691,8 +3691,8 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-light {
-    color: #fff;
-    border-color: #fff
+    color: #5A2D1D;
+    border-color: #5A2D1D
 }
 
 .btn-outline-light:hover {
