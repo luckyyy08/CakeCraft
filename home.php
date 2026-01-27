@@ -61,7 +61,7 @@ if (!isset($_SESSION['user_id'])) {
     
     
         <div class="col-6 col-md-3">
-            <a href="birthdaycake.php" class="cake-category">
+            <a href="cakes.php?cat=birthday" class="cake-category">
                 <img src="img/cake1.png" alt="Birthday Cake">
                 <h6>Birthday</h6>
             </a>
@@ -75,14 +75,14 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="weddingcake.php" class="cake-category">
+            <a href="cakes.php?cat=wedding" class="cake-category">
                 <img src="img/cake3.png" alt="Wedding Cake">
                 <h6>Wedding</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="anversarycake.php" class="cake-category">
+            <a href="cakes.php?cat=anniversary" class="cake-category">
                 <img src="img/cake4.png" alt="Anniversary Cake">
                 <h6>Anniversary</h6>
             </a>
@@ -111,7 +111,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
           <div class="col-6 col-md-3">
-            <a href="customcake.php" class="cake-category">
+            <a href="cakes.php?cat=custom" class="cake-category">
                 <img src="img/cake8.png" alt="Custom Cake">
                 <h6>Custom Cake</h6>
             </a>

@@ -1,3 +1,34 @@
+<?php
+session_start();
+include "db.php";
+include "header.php";
+
+if (!isset($_GET['cat'])) {
+    echo "<h3 class='text-center mt-5'>Category not found</h3>";
+    exit;
+}
+
+$cat = $_GET['cat'];
+?>
+<?php
+$catQuery = mysqli_query($conn, "SELECT * FROM categories WHERE name='$cat'");
+
+if (mysqli_num_rows($catQuery) == 0) {
+    echo "<h3 class='text-center mt-5'>Invalid Category</h3>";
+    exit;
+}
+
+$catData = mysqli_fetch_assoc($catQuery);
+$catId   = $catData['id'];
+?>
+<?php
+$cakes = mysqli_query(
+    $conn,
+    "SELECT * FROM cakes WHERE category_id = $catId"
+);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +39,12 @@
 <body>
   <?php include"header.php";?>
 
-  <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width:700px;">
+<div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width:700px;">
     <h1 class="display-4 text-uppercase">
         <?= ucfirst($catData['name']); ?> Cakes
     </h1>
 </div>
+
 
 
 <div class="container-fluid py-5">
@@ -185,6 +217,29 @@
 
 
     </div>
+  </div>
+</div>
+
+
+<div class="col-lg-9">
+  <div class="row g-4" id="cakeList">
+
+<?php while ($cake = mysqli_fetch_assoc($cakes)) { ?>
+    <div class="col-md-4 cake-item"
+         data-price="<?= $cake['price'] ?>"
+         data-type="<?= $cake['type'] ?>"
+         data-flavor="<?= $cake['flavor'] ?>">
+
+        <div class="cake-card">
+            <img src="img/<?= $cake['image'] ?>" class="img-fluid">
+            <div class="p-3 text-center">
+                <h6 class="cake-name"><?= $cake['name'] ?></h6>
+                <p class="price">₹<?= $cake['price'] ?></p>
+            </div>
+        </div>
+    </div>
+<?php } ?>
+
   </div>
 </div>
 
