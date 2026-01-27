@@ -61,35 +61,35 @@ if (!isset($_SESSION['user_id'])) {
     
     
         <div class="col-6 col-md-3">
-            <a href="cakes.php?cat=birthday" class="cake-category">
+            <a href="category.php?cat=birthday" class="cake-category">
                 <img src="img/cake1.png" alt="Birthday Cake">
                 <h6>Birthday</h6>
             </a>
         </div>
 
     <div class="col-6 col-md-3">
-            <a href="engagmentcake.php" class="cake-category">
+            <a href="category.php?cat=engagment" class="cake-category">
                 <img src="img/cake2.png" alt="Engagement Cake">
                 <h6>Engagement</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="cakes.php?cat=wedding" class="cake-category">
+            <a href="category.php?cat=wedding" class="cake-category">
                 <img src="img/cake3.png" alt="Wedding Cake">
                 <h6>Wedding</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="cakes.php?cat=anniversary" class="cake-category">
+            <a href="category.php?cat=anniversary" class="cake-category">
                 <img src="img/cake4.png" alt="Anniversary Cake">
                 <h6>Anniversary</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="babyshowercake.php" class="cake-category">
+            <a href="category.php?cat=babyshower" class="cake-category">
                 <img src="img/cake5.png" alt="Baby Shower Cake">
                 <h6>Baby Shower</h6>
             </a>
@@ -97,21 +97,21 @@ if (!isset($_SESSION['user_id'])) {
         
       
         <div class="col-6 col-md-3">
-            <a href="graduationcake.php" class="cake-category">
+            <a href="category.php?cat=graduation" class="cake-category">
                 <img src="img/cake6.png" alt="Graduation Cake">
                 <h6>Career / Graduation</h6>
             </a>
         </div>
 
         <div class="col-6 col-md-3">
-            <a href="promotioncake.php" class="cake-category">
+            <a href="category.php?cat=promotion" class="cake-category">
                 <img src="img/cake7.png" alt="Promotion Cake">
                 <h6>Promotion</h6>
             </a>
         </div>
 
           <div class="col-6 col-md-3">
-            <a href="cakes.php?cat=custom" class="cake-category">
+            <a href="category.php?cat=custom" class="cake-category">
                 <img src="img/cake8.png" alt="Custom Cake">
                 <h6>Custom Cake</h6>
             </a>
