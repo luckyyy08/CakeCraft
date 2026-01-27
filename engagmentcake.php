@@ -138,7 +138,7 @@
 
 <div class="col-md-4 cake-item" data-price="1750" data-type="eggless" data-flavor="fruit">
   <div class="cake-card">
-    <img src="img/rustic-berry.png" class="img-fluid" alt="Rustic Semi-Naked Berry">
+    <img src="img/ecake8.jpeg" class="img-fluid" alt="Rustic Semi-Naked Berry">
     <div class="p-3 text-center">
       <h6 class="cake-name">Rustic Semi-Naked Berry</h6>
       <p class="price">₹1,750</p>
@@ -148,7 +148,7 @@
 
 <div class="col-md-4 cake-item" data-price="2199" data-type="eggless" data-flavor="red-velvet">
   <div class="cake-card">
-    <img src="img/ecake8.jpeg" class="img-fluid" alt="Forever & Always Velvet">
+    <img src="img/ecake9.jpeg" class="img-fluid" alt="Forever & Always Velvet">
     <div class="p-3 text-center">
       <h6 class="cake-name">Forever & Always Velvet</h6>
       <p class="price">₹2,199</p>
