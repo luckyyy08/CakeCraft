@@ -365,7 +365,7 @@ h6,
     padding: 8px 40px 8px 38px;
     border-radius: 30px;
     border: 2px solid #E88F2A;
-    background: linear-gradient(145deg, #3d1e1e, #caa642);
+    background: linear-gradient(145deg, #3d1e1e, #3d1e1e);
     color: #fff;
     font-size: 20px;
     transition: all 0.4s ease;
@@ -520,9 +520,20 @@ h6,
     border-radius: 0 30px 30px 0;
     padding: 10px 15px;
 }
-
 .form-control::placeholder {
     color: #ccc;
+}
+
+.form-control-1 {
+    background: transparent;
+    border: 1px solid #E88F2A;
+    color: #000000;
+    border-radius: 0 30px 30px 0;
+    padding: 10px 15px;
+}
+
+.form-control-1::placeholder {
+    color: #000000c9;
 }
 
 .form-control:focus {

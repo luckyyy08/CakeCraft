@@ -9,7 +9,7 @@ if (!isset($_SESSION['user_id'])) {
 
 $user_id = $_SESSION['user_id'];
 
-$sql = "SELECT fullname, mobile FROM users WHERE id=?";
+$sql = "SELECT fullname, email, mobile FROM users WHERE id=?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
@@ -28,9 +28,7 @@ $user = $stmt->get_result()->fetch_assoc();
     <link href="css/style.css" rel="stylesheet">
 
     <style>
-       
         .account-header {
-            
             color: #5A2D1D;
             padding: 30px;
         }
@@ -42,11 +40,10 @@ $user = $stmt->get_result()->fetch_assoc();
         .sidebar {
             background: #f5f7f8;
             padding: 20px;
-            height: 100%;
         }
         .sidebar a {
             display: block;
-            padding: 12px 10px;
+            padding: 12px;
             color: #333;
             font-weight: 500;
             text-decoration: none;
@@ -60,6 +57,74 @@ $user = $stmt->get_result()->fetch_assoc();
             text-align: center;
             padding: 80px 20px;
             color: #777;
+        }
+
+        /* ===== SLIDE PANEL ===== */
+        .profile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            display: none;
+            z-index: 998;
+        }
+
+        .profile-panel {
+            position: fixed;
+            top: 0;
+            right: -420px;
+            width: 420px;
+            height: 100vh;
+            background: #fff;
+            z-index: 999;
+            transition: 0.35s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .profile-panel.active {
+            right: 0;
+        }
+
+        .panel-header {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+
+        .panel-header span {
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .panel-body {
+            padding: 25px;
+            flex: 1;
+        }
+
+        .panel-body label {
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .info-row input {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            border-radius: 0;
+            padding: 8px 5px;
+        }
+
+        .info-row input:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: #d4a017;
+        }
+
+        .panel-footer {
+            padding: 15px;
+            border-top: 1px solid #eee;
         }
     </style>
 </head>
@@ -75,7 +140,11 @@ $user = $stmt->get_result()->fetch_assoc();
             <h3 class="mb-1"><?php echo $user['fullname']; ?></h3>
             <small><?php echo $user['mobile']; ?></small>
         </div>
-        <a href="profile_edit.php" class="btn btn-outline-light btn-sm">EDIT PROFILE</a>
+
+        <!-- FIXED BUTTON -->
+        <button class="btn btn-outline-dark btn-sm" onclick="openProfileEdit()">
+            EDIT PROFILE
+        </button>
     </div>
 </div>
 
@@ -108,6 +177,55 @@ $user = $stmt->get_result()->fetch_assoc();
 
     </div>
 </div>
+
+<!-- OVERLAY -->
+<div id="profileOverlay" class="profile-overlay" onclick="closeProfileEdit()"></div>
+
+<!-- SLIDE PANEL -->
+<div id="profilePanel" class="profile-panel">
+    <div class="panel-header">
+        <h5>Edit profile</h5>
+        <span onclick="closeProfileEdit()">✕</span>
+    </div>
+
+    <form action="update_profile.php" method="POST">
+        <div class="panel-body">
+
+            <label>Phone number</label>
+            <div class="info-row">
+                <input type="text" name="mobile"
+                       value="<?php echo $user['mobile']; ?>" class="form-control-1">
+            </div>
+
+            <label class="mt-4">Email id</label>
+            <div class="info-row">
+                <input type="email"
+                       value="<?php echo $user['email']; ?>"
+                       class="form-control-1" readonly>
+            </div>
+
+        </div>
+
+        <div class="panel-footer">
+            <button type="submit" class="btn btn-warning w-100">
+                SAVE CHANGES
+            </button>
+        </div>
+    </form>
+</div>
+
+<!-- JS -->
+<script>
+function openProfileEdit() {
+    document.getElementById("profilePanel").classList.add("active");
+    document.getElementById("profileOverlay").style.display = "block";
+}
+
+function closeProfileEdit() {
+    document.getElementById("profilePanel").classList.remove("active");
+    document.getElementById("profileOverlay").style.display = "none";
+}
+</script>
 
 </body>
 </html>

@@ -50,7 +50,7 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #656565;
-    background-color: #fff;
+    background-color: #F4F1DE;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
@@ -3691,6 +3691,11 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-light {
+    color: #ffffff;
+    border-color: #ffffff
+}
+
+.btn-outline-light-1 {
     color: #5A2D1D;
     border-color: #5A2D1D
 }
