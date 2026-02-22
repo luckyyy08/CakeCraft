@@ -68,7 +68,7 @@ if (!isset($_SESSION['user_id'])) {
         </div>
 
     <div class="col-6 col-md-3">
-            <a href="category.php?cat=engagment" class="cake-category">
+            <a href="category.php?cat=engagement" class="cake-category">
                 <img src="img/cake2.png" alt="Engagement Cake">
                 <h6>Engagement</h6>
             </a>
