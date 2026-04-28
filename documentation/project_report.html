@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery & Cake Ordering System Project Report</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Times+New+Roman:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f0f0f0;
+            font-family: 'Times New Roman', Times, serif;
+            color: #000;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            position: relative;
+            box-sizing: border-box;
+            page-break-after: always;
+        }
+
+        @media print {
+            body { background: none; }
+            .page { margin: 0; box-shadow: none; }
+            .no-print { display: none; }
+        }
+
+        .text-center { text-align: center; }
+        .text-justify { text-align: justify; }
+        
+        h1, h2, h3, h4 { margin: 10px 0; }
+        p { line-height: 1.6; font-size: 14pt; margin-bottom: 15px; }
+
+        .title-page-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            text-align: center;
+        }
+
+        .college-logo {
+            width: 120px;
+            margin: 0 auto;
+        }
+
+        .project-title {
+            font-size: 28pt;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #003366;
+            margin: 30px 0;
+            text-transform: uppercase;
+        }
+
+        .developed-by {
+            margin: 40px 0;
+        }
+
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 80px;
+        }
+
+        .signature-box {
+            text-align: center;
+            width: 200px;
+        }
+
+        .line {
+            width: 100%;
+            border-top: 1px solid #000;
+            margin-bottom: 5px;
+        }
+
+        .nav-bar {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #008542;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            z-index: 1000;
+            font-family: sans-serif;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+
+<div class="nav-bar no-print" onclick="window.print()">
+    <i class="fa-solid fa-print"></i> Print Report / Save PDF
+</div>
+
+<!-- PAGE 1: TITLE PAGE -->
+<div class="page">
+    <div class="title-page-content">
+        <div>
+            <h3 style="font-weight: bold;">M.V.P.SAMAJ’S</h3>
+            <h2 style="font-size: 18pt; font-weight: bold;">K.R.T ARTS, A.M.SCIENCE AND B.H.COMMERCE<br>COLLEGE, GANGAPUR ROAD<br>NASHIK.</h2>
+            
+            <img src="https://via.placeholder.com/150?text=COLLEGE+LOGO" alt="Logo" class="college-logo" style="margin-top:20px; margin-bottom: 20px; border-radius: 50%;">
+            
+            <h2 style="font-weight: bold; font-size: 18pt; margin-top: 20px;">A PROJECT REPORT<br>ON</h2>
+            <div class="project-title" style="font-size: 22pt;">ONLINE BAKERY & CAKE ORDERING SYSTEM</div>
+        </div>
+
+        <div class="developed-by">
+            <h3 style="font-weight: bold;">Developed by</h3>
+            <div style="font-size: 14pt; font-weight: bold; color: #d32f2f; line-height: 1.8;">
+                1) Lokesh Dipak Ahire (Roll No: 9)<br>
+                2) Ayush Rajendra Khairnar (Roll No: 61)<br>
+                3) Tejas Mahendra More (Roll No: 76)
+            </div>
+            <p style="font-weight: bold; margin-top: 10px;">B.Sc. (Computer Science) (2025-2026)</p>
+        </div>
+
+        <div>
+            <h3 style="font-weight: bold;">Under the guidance of</h3>
+            <p style="color: #d32f2f; font-weight: bold; font-size: 14pt;">Prof. B.B.Darekar Sir</p>
+            <h3 style="font-weight: bold; margin-bottom: 40px;">Department of Computer Science</h3>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 2: INDEX -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">INDEX</h1>
+    
+    <table style="width: 100%; border-collapse: collapse; font-size: 14pt;">
+        <thead>
+            <tr style="background: #f0f0f0;">
+                <th style="border: 1px solid #000; padding: 10px; width: 60px;">Sr.No</th>
+                <th style="border: 1px solid #000; padding: 10px;">Title</th>
+                <th style="border: 1px solid #000; padding: 10px; width: 100px;">Page NO.</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">1.</td><td style="border: 1px solid #000; padding: 10px;">Introduction</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">2.</td><td style="border: 1px solid #000; padding: 10px;">Problem Definition.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">3.</td><td style="border: 1px solid #000; padding: 10px;">Need of System.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">4.</td><td style="border: 1px solid #000; padding: 10px;">Proposed System.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">5.</td><td style="border: 1px solid #000; padding: 10px;">Feasibility study.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">6.</td><td style="border: 1px solid #000; padding: 10px;">H/w and s/w requirement.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">7.</td><td style="border: 1px solid #000; padding: 10px;">Fact finding techniques.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">8.</td><td style="border: 1px solid #000; padding: 10px;">ERD.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">9.</td><td style="border: 1px solid #000; padding: 10px;">UML Diagrams.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">10.</td><td style="border: 1px solid #000; padding: 10px;">Data Dictionary.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">11.</td><td style="border: 1px solid #000; padding: 10px;">Sample I/O Screen.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">12.</td><td style="border: 1px solid #000; padding: 10px;">Conclusion.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">13.</td><td style="border: 1px solid #000; padding: 10px;">Advantages.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+            <tr><td style="border: 1px solid #000; padding: 10px; text-align: center;">14.</td><td style="border: 1px solid #000; padding: 10px;">Bibliography.</td><td style="border: 1px solid #000; padding: 10px;"></td></tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- PAGE 3: CERTIFICATE -->
+<div class="page">
+    <h2 class="text-center" style="font-size: 20pt; font-weight: bold;">SAVITRIBAI PHULE PUNE UNIVERSITY</h2>
+    
+    <div class="text-center" style="margin: 40px 0;">
+        <img src="https://via.placeholder.com/100?text=LOGO" alt="Logo" style="width: 100px; border-radius: 50%;">
+        <h3 style="font-weight: bold; margin-top: 15px;">M.V.P SAMAJ’S</h3>
+        <h3 style="font-weight: bold;">K.R.T Arts, BH Commerce and AM Science College, Nashik</h3>
+    </div>
+
+    <h1 class="text-center" style="font-size: 28pt; font-weight: bold; color: #4a4a8f; text-decoration: underline; margin-bottom: 50px;">CERTIFICATE</h1>
+
+    <div class="text-justify">
+        <p style="font-size: 14pt; line-height: 1.8;">This is to certify that <u><b>Mr. Lokesh Ahire, Mr. Ayush Khairnar & Mr. Tejas More</b></u> of <b>T.Y.B.Sc(Computer Science)</b> have/has successfully completed project titled <u><b>"ONLINE BAKERY & CAKE ORDERING SYSTEM"</b></u> satisfactorily as partial fulfillment of curriculum for <b>T.Y.B.Sc(Computer Science) Semester-VI</b> during academic year <b>2025-2026</b>.</p>
+    </div>
+
+    <div class="signature-section" style="margin-top: 120px;">
+        <div class="signature-box">
+            <div class="line"></div>
+            <p><b>Project Guide</b></p>
+        </div>
+        <div class="signature-box">
+            <div class="line"></div>
+            <p><b>Head,<br>Dept. of Computer Science</b></p>
+        </div>
+    </div>
+
+    <div class="signature-section" style="margin-top: 80px;">
+        <div class="signature-box">
+            <div class="line"></div>
+            <p><b>Internal Examiner</b></p>
+        </div>
+        <div class="signature-box">
+            <div class="line"></div>
+            <p><b>External Examiner</b></p>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 4: ACKNOWLEDGEMENT -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">ACKNOWLEDGEMENT</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>We are happy to present the project <u><b>"ONLINE BAKERY & CAKE ORDERING SYSTEM"</b></u> in PHP.</p>
+
+        <p>A Project titled <u><b>"ONLINE BAKERY & CAKE ORDERING SYSTEM"</b></u> would not have been completed without the valuable guidance and encouragement of <b>"Prof. B.B.Darekar sir"</b> and all staff members. We acknowledge them for their moral support.</p>
+
+        <p>This project is substantially upgrading our skill of software development which we intend to good use in developing better system in future.</p>
+
+        <p>In conclusion, we would like to express our thanks to management for providing us all facilities for completion of our project.</p>
+
+        <p>Finally we extend our thanks our all B.Sc. (Computer Science) staff, Classmates and also thanks to our parents to help us all time.</p>
+
+        <p>And special thanks to my Friends who helped us for successful completion of this project. They pointed out errors & suggested changes, thus helped in many ways, give us the idea of this project.</p>
+        
+        <div style="margin-top: 60px; text-align: right; padding-right: 50px; font-weight: bold;">
+            <p>1) Lokesh Dipak Ahire<br>
+            2) Ayush Rajendra Khairnar<br>
+            3) Tejas Mahendra More</p>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 5: INTRODUCTION -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">INTRODUCTION</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>This is a small scale project for <u><b>Online Cake Delivery System (Online Bakery & Cake Ordering System)</b></u>. The basic idea is that user can buy delicious Cakes, Decorations, and Hampers online. It consists of product details, product quantity, and price. The administrator can enter the name and password and generate the report and can perform operations like add category, add and delete the products in the database.</p>
+
+        <p>The Online Bakery & Cake Ordering System Online Shopping system enables store managers to set up online shops, customers to browse through the shops, maintain lists of product categories. Also the agenda is to design the online shopping site to manage the items in the shop and also help customers to purchase the product online without visiting the shop physically which saves the time of the customer.</p>
+
+        <p>The customer can give the acknowledgment of the product by the review system that whether the product was useful or not which will also be helpful for the admin to improve services.</p>
+    </div>
+</div>
+
+<!-- PAGE 6: PROBLEM DEFINITION -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">PROBLEM DEFINITION</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>User will visit cake shop or bakery to buy products. It requires lot of time and effort to travel and choose. The proposed system will handle this problem. Online purchasing is done.</p>
+
+        <p><b>Problem Statement:</b> This project aims to develop an online shopping platform for customers. With the help of this you can carry out an online shopping from your home. There is no compelling reason to go to the crowded stores or shopping centers during festival seasons or busy hours.</p>
+        
+        <p>You simply require a mobile and one payment sending option to shop online. To get to this online shopping system all the user will need to have an email and password to login and proceed your shopping. The login credentials for an online shopping system are under high security and nobody will have the capacity to crack it easily.</p>
+        
+        <p>Upon successful login the user can purchase a wide range of bakery products, customized cakes, and party decorations as per the users requirement. And of course you will get your requested ordered items at your door step. No need to go physical shops with this you will have more time to spend with your family.</p>
+
+        <p>Shopkeeper has to build a shop which requires lots of money but through Online Bakery & Cake Ordering System he can easily sale his products without wasting much money on physical infrastructure. Manually it is very difficult to manage the inventory and orders. With the help of computer it becomes easy and faster to manage the system.</p>
+    </div>
+</div>
+
+<!-- PAGE 7: NEED OF SYSTEM -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">NEED OF SYSTEM</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>The implementation of an online bakery and cake shopping system addresses various needs and demands, both for consumers and businesses. Here are some key reasons highlighting the need for such a system:</p>
+        
+        <p><b>1. Convenience:</b><br>
+        &bull; 24/7 Accessibility: Online shopping allows users to browse and make purchases at any time, providing the convenience of round-the-clock access to products.<br>
+        &bull; Human errors are reduced.</p>
+
+        <p><b>2. Product Variety and Availability:</b><br>
+        &bull; Online platforms can showcase a vast range of baked goods, cakes, and gifts, providing customers with a wide selection.<br>
+        &bull; Customers can easily check the availability of products and receive updates on stock status.</p>
+
+        <p><b>3. Time Savings:</b><br>
+        &bull; Users can quickly find products using search and filter options, saving time compared to traditional retail visiting.</p>
+
+        <p><b>4. Cost Savings:</b><br>
+        &bull; Customers save on transportation costs associated with visiting physical stores.</p>
+
+        <p><b>5. Order Tracking and Transparency:</b><br>
+        &bull; Customers can track the status of their orders in real-time, providing transparency and reducing anxiety about delivery.</p>
+
+        <p><b>6. Efficient Returns and Exchanges:</b><br>
+        &bull; Online platforms typically have clear and user-friendly return policies. Customer support services are also readily available to assist users with any issues or inquiries they may have.</p>
+
+        <p><b>7. Promotions and Discounts:</b><br>
+        &bull; Online platforms frequently offer promotions, discounts, and exclusive deals, attracting price-conscious consumers and providing them with cost-effective shopping options.</p>
+
+        <p><b>8. Convenient Payment Options:</b><br>
+        &bull; Online platforms offer a variety of payment options, including credit/debit cards, digital wallets, and other secure payment gateways. This flexibility enhances the ease of completing transactions.</p>
+    </div>
+</div>
+
+<!-- PAGE 8: PROPOSED SYSTEM -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">PROPOSED SYSTEM</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>&bull; Provide interactive interface through which a user can interact with different areas of application easily.</p>
+
+        <p>&bull; Searching products is more convenient for the user.</p>
+
+        <p>&bull; Our system maintains the information of user such as user Id, user name, Email.</p>
+
+        <p>&bull; Our system also maintains the information of Cakes & Bakery products such as product details, product price, and quantity.</p>
+
+        <p>&bull; System provides interface to shopkeeper/admin to sell his products without an extra cost.</p>
+
+        <p>&bull; Enable users to add products to their shopping cart. Allows user to modify the quantity or removes item from the cart. Display the summary of the cart and the total cost.</p>
+
+        <p>&bull; Include our contact form and Provide a FAQ section for common questions.</p>
+
+        <p>&bull; After buying the product the customer will get the order notification to track the product which will be very useful for the customer.</p>
+    </div>
+</div>
+
+<!-- PAGE 9: FEASIBILITY STUDY -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">FEASIBILITY STUDY</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>A feasibility study for an online bakery store involves assessing the viability and potential success of such a venture. Here’s a structured approach to conducting a feasibility study:</p>
+
+        <p><b>1. Operational Feasibility:</b></p>
+        <p>The present system is easily understandable the users are presented with friendly user interface that helps them to understand the flow of the system more easily. Maximum Transparency has been provided. The new system is very much user friendly and operational cost is of the new system needs less human efforts. The proposed project is beneficial to the organizational and is user friendly. The system is directly used by the users and needs no other operators to coordinate the system. So the system can be judged operationally feasible.</p>
+
+        <p><b>2. Market Analysis:</b></p>
+        <p>&bull; <b>Market Size:</b> Determine the size of the online bakery and cake delivery market, including current trends and growth projections.<br>
+        &bull; <b>Target Audience:</b> Identify the demographics and preferences of potential customers.<br>
+        &bull; <b>Competitive Analysis:</b> Analyze existing online platforms and identify their strengths, weaknesses, opportunities, and threats (SWOT analysis).<br>
+        &bull; <b>Trends and Technologies:</b> Assess emerging technologies and trends in electronic shopping and e-commerce.</p>
+        <p>&bull; <b>User Interface and Experience:</b><br>
+        &bull; <b>Product Catalog and Inventory Management:</b><br>
+        &bull; <b>Security and Privacy:</b></p>
+
+        <p><b>3. Financial Analysis:</b></p>
+        <p>&bull; <b>Cost Estimation:</b> Determine the initial investment required for website development, infrastructure setup, marketing, and operational expenses.<br>
+        &bull; <b>Revenue Projection:</b> Forecast potential revenue streams, including sales commissions, advertising revenue, and subscription fees.<br>
+        &bull; <b>Break-Even Analysis:</b> Calculate the time it will take to reach the break-even point and start generating profits.<br>
+        &bull; <b>Risk Assessment:</b> Identify potential financial risks and develop strategies to mitigate them.</p>
+
+        <p><b>4. Conclusion and Recommendations:</b></p>
+        <p>&bull; Summarize the findings of the feasibility study and provide recommendations regarding the viability of establishing an electronic shopping mall.<br>
+        &bull; Highlight potential opportunities, challenges, and strategies for success.<br>
+        &bull; Make a final decision on whether to proceed with the project based on the analysis conducted.</p>
+    </div>
+</div>
+
+<!-- PAGE 10: HARDWARE SOFTWARE REQUIREMENTS -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">HARDWARE SOFTWARE REQUIREMENTS</h1>
+
+    <div style="font-size: 16pt; margin-left: 50px;">
+        <h3 class="text-center" style="text-decoration: underline; margin-bottom: 40px;">HARDWARE REQUIREMENTS:</h3>
+        <ul style="list-style-type: disc; line-height: 2.5;">
+            <li>i3 Processor</li>
+            <li>8 GB RAM</li>
+            <li>500 GB HARDDISK</li>
+        </ul>
+
+        <h3 class="text-center" style="text-decoration: underline; margin-top: 60px; margin-bottom: 40px;">SOFTWARE REQUIREMENTS</h3>
+        <ul style="list-style-type: disc; line-height: 2.5;">
+            <li><b>OPERATING SYSTEM:</b> Windows</li>
+            <li><b>LANGUAGE:</b> HTML5, CSS3, PHP</li>
+            <li><b>BACKEND:</b> PostgreSQL</li>
+        </ul>
+    </div>
+</div>
+
+<!-- PAGE 11: FACT FINDING TECHNIQUES -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">FACT FINDING TECHNIQUES</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <p>Fact-finding techniques are crucial for gathering requirements and understanding the scope of a project, especially for an online electronic shopping project. The following fact finding technique or prefers two or more fact finding techniques according to situation: -</p>
+        
+        <ol style="line-height: 1.8;">
+            <li>Interview.</li>
+            <li>Record Review.</li>
+            <li>Observation.</li>
+        </ol>
+        <p>While developing the system following techniques were used.</p>
+
+        <p><b>1. Interviewing: -</b><br>
+        Conduct interviews with stakeholders, including customers, end-users, product managers, and technical experts. Ask them about their expectations, preferences, and specific requirements for the online electronic project. For instance, <u>inquire about the types of electronic products</u> they are interested in, <u>preferred features</u>, budget constraints, and delivery preferences.</p>
+
+        <p><b>2. Record Review: -</b><br>
+        This technique proves in finding facts of system and pointes must be covered while designing the current system. Observing documents, register and files, which are prepared manually by the department, carries out the technique of record review. It helps the design of inputs and output required for the system, the database, screen-designing etc. Thus, this technique proves very helpful for <u>analyzing about the system</u>.</p>
+
+        <p><b>3. Observation: -</b><br>
+        Observations for an electronic product shopping mall project can be based on various aspects of the development, implementation, and operation of the platform. Here are some key observations you might make during a review of such a project:</p>
+    </div>
+</div>
+
+<!-- PAGE 12: ERD (Entity Relationship Diagram) -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">ERD</h1>
+
+    <div class="text-center">
+        <p><i>[Insert ERD Diagram Image Here]</i></p>
+        <div style="border: 1px dashed #ccc; padding: 40px; margin: 20px 0; background: #fafafa;">
+            <p><b>Description of Entities:</b></p>
+            <ul style="text-align: left; display: inline-block;">
+                <li><b>Users:</b> (id, fullname, email, password, mobile)</li>
+                <li><b>Cakes:</b> (id, name, description, price, image, category_id)</li>
+                <li><b>Orders:</b> (id, user_id, order_date, total_price, status)</li>
+                <li><b>Categories:</b> (id, name)</li>
+                <li><b>Order_Items:</b> (id, order_id, product_id, quantity, price)</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- PAGE 13: UML DIAGRAMS -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">UML DIAGRAMS</h1>
+
+    <div class="text-center">
+        <h3 style="text-decoration: underline;">Use Case Diagram</h3>
+        <p><i>[Insert Use Case Diagram Here]</i></p>
+        
+        <h3 style="text-decoration: underline; margin-top: 50px;">Sequence Diagram</h3>
+        <p><i>[Insert Sequence Diagram Here]</i></p>
+    </div>
+</div>
+
+<!-- PAGE 14: DATA DICTIONARY -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">DATA DICTIONARY</h1>
+
+    <div style="font-size: 11pt;">
+        <h3 style="font-weight: bold; margin-bottom: 5px;">1) Admin Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">username</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(100)</td><td style="border: 1px solid #000; padding: 6px;">UNIQUE</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">password</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(255)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">2) Users Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">fullname</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(255)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">email</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(100)</td><td style="border: 1px solid #000; padding: 6px;">UNIQUE</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">password</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(255)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">mobile</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(15)</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">2) Cakes / Products Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">category_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Foreign Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">name</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(255)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">price</td><td style="border: 1px solid #000; padding: 6px;">DECIMAL(10,2)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">image</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(255)</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">description</td><td style="border: 1px solid #000; padding: 6px;">TEXT</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">3) Orders Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">user_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Foreign Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">total_price</td><td style="border: 1px solid #000; padding: 6px;">DECIMAL(10,2)</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">payment_status</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(50)</td><td style="border: 1px solid #000; padding: 6px;">'Paid'/'Pending'</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">order_status</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(50)</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">4) Order_Items Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">order_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Foreign Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">item_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">quantity</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">price</td><td style="border: 1px solid #000; padding: 6px;">DECIMAL(10,2)</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">5) Cart Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">user_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Foreign Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">item_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">item_type</td><td style="border: 1px solid #000; padding: 6px;">ENUM</td><td style="border: 1px solid #000; padding: 6px;">'cake','candle',etc</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">quantity</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;"></td></tr>
+            </tbody>
+        </table>
+
+        <h3 style="font-weight: bold; margin-bottom: 5px;">6) User_Addresses Table</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 15px; text-align: left;">
+            <thead style="background: #334155; color: white;">
+                <tr><th style="border: 1px solid #000; padding: 6px;">Attribute</th><th style="border: 1px solid #000; padding: 6px;">DataType</th><th style="border: 1px solid #000; padding: 6px;">Constraint</th></tr>
+            </thead>
+            <tbody>
+                <tr><td style="border: 1px solid #000; padding: 6px;">id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Primary Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">user_id</td><td style="border: 1px solid #000; padding: 6px;">INT</td><td style="border: 1px solid #000; padding: 6px;">Foreign Key</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">city</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(100)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+                <tr><td style="border: 1px solid #000; padding: 6px;">pincode</td><td style="border: 1px solid #000; padding: 6px;">VARCHAR(10)</td><td style="border: 1px solid #000; padding: 6px;">NOT NULL</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- PAGE 15: SAMPLE I/O SCREEN -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">SAMPLE I/O SCREEN</h1>
+
+    <div class="text-center">
+        <p><b>Registration & Login Screen</b></p>
+        <div style="border: 1px dashed #ccc; padding: 60px; margin: 10px 0;">[Screenshot: Registration Page]</div>
+        
+        <p style="margin-top: 30px;"><b>Home Page (Product List)</b></p>
+        <div style="border: 1px dashed #ccc; padding: 60px; margin: 10px 0;">[Screenshot: Home Page]</div>
+
+        <p style="margin-top: 30px;"><b>Admin Dashboard</b></p>
+        <div style="border: 1px dashed #ccc; padding: 60px; margin: 10px 0;">[Screenshot: Admin Panel]</div>
+    </div>
+</div>
+
+<!-- PAGE 16: CONCLUSION -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">CONCLUSION</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <ul style="list-style-type: disc; line-height: 2;">
+            <li>Human errors are reduced.</li>
+            <li>Data storage is done efficiently.</li>
+            <li>Data retrieval is faster.</li>
+            <li>Keeping a record of all entered was a very tedious job.</li>
+            <li>Searching a particular entry was tedious because it involved searching all entries which required more time.</li>
+            <li>The cost for maintenance is eliminated.</li>
+            <li>Makes system user friendly.</li>
+            <li>Our system provides two types of user administrator and local user which have a limited functionality. It improves the security.</li>
+            <li>Only the users who have administrative rights are allowed to create or modify users and unlock/lock users.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- PAGE 17: ADVANTAGES -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">ADVANTAGES</h1>
+
+    <div class="text-justify" style="font-size: 14pt;">
+        <ul style="list-style-type: disc; line-height: 2;">
+            <li>It is fast, efficient and reliable.</li>
+            <li>Very user friendly.</li>
+            <li>Easy accessibility of data.</li>
+            <li>Provides more security and integrity to data.</li>
+            <li>We can <u>save our time</u>.</li>
+            <li>We don't visit any <u>shop or mall</u>.</li>
+            <li>Wide <u>product variety</u>.</li>
+            <li><u>Eassy to returns</u> and Exchange.</li>
+            <li>We can do online shopping from home without <u>going any crowd</u> during the festive season.</li>
+        </ul>
+    </div>
+</div>
+
+<!-- PAGE 18: BIBLIOGRAPHY -->
+<div class="page">
+    <h1 class="text-center" style="font-size: 24pt; font-weight: bold; text-decoration: underline; margin-bottom: 50px;">BIBLIOGRAPHY</h1>
+
+    <div class="text-center" style="margin-top: 50px;">
+        <img src="https://via.placeholder.com/200x250?text=Owl+Illustration" alt="Library Owl" style="width: 200px; margin-bottom: 40px;">
+        
+        <div style="font-size: 16pt; text-align: left; display: inline-block; line-height: 2;">
+            1) <a href="http://www.google.com" style="color: blue; text-decoration: underline;">http://www.google.com</a><br>
+            2) Learning PHP, MySQL & JavaScript-Robin Nixon<br>
+            3) PHP for the Web-Larry Ullman<br>
+            4) <a href="http://www.wikepedia.com" style="color: blue; text-decoration: underline;">http://www.wikepedia.com</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+

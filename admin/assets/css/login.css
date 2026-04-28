@@ -1,0 +1,76 @@
+body { 
+            background: #f4f6f9; 
+            margin: 0; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            font-family: 'Roboto', sans-serif;
+        }
+        .login-box {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            border-top: 5px solid #008542;
+        }
+        .login-box h2 {
+            margin: 0 0 10px 0;
+            color: #333;
+        }
+        .login-box p {
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+            position: relative;
+        }
+        .form-control {
+            width: 100%;
+            padding: 12px 12px 12px 40px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 15px;
+            box-sizing: border-box;
+            outline: none;
+            transition: 0.3s;
+        }
+        .form-control:focus {
+            border-color: #008542;
+            box-shadow: 0 0 0 3px rgba(0,133,66,0.1);
+        }
+        .form-group i {
+            position: absolute;
+            left: 15px;
+            top: 14px;
+            color: #aaa;
+        }
+        .btn-login {
+            background: #008542;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-login:hover {
+            background: #006b35;
+        }
+        .error-msg {
+            color: #d32f2f;
+            background: #fdf3f2;
+            padding: 10px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 14px;
+        }

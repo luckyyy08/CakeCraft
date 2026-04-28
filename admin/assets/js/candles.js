@@ -1,0 +1,1 @@
+alert('Candle Deleted Successfully'); window.location='candles.php';

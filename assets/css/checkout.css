@@ -1,0 +1,71 @@
+body { background: #f4f6f8; }
+        .checkout-container {
+            max-width: 600px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            text-align: center;
+        }
+        .checkout-container h2 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .order-total {
+            font-size: 32px;
+            color: #e67e22;
+            font-weight: 700;
+            margin: 20px 0 40px 0;
+            padding: 20px;
+            background: #fff8f3;
+            border-radius: 8px;
+            border: 1px dashed #e67e22;
+        }
+        .payment-options {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .btn-cod {
+            background: #008542;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn-cod:hover { background: #006b35; }
+        .btn-online {
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            padding: 16px;
+            border-radius: 6px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn-online:hover { background: #1557b0; }
+        .secure-badge {
+            margin-top: 30px;
+            color: #777;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }

@@ -1,0 +1,1 @@
+alert('Cake Added Successfully!'); window.location='cakes.php';

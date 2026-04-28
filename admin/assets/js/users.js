@@ -1,0 +1,1 @@
+alert('User Deleted'); window.location='users.php';

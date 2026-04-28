@@ -1,0 +1,1 @@
+alert('Decoration Deleted Successfully'); window.location='decorations.php';

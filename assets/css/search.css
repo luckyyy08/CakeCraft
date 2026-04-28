@@ -1,0 +1,6 @@
+.search-header { text-align: center; padding: 40px 20px; background-color: #f7f9f2; border-bottom: 1px solid #eef3e6; }
+        .search-header h1 { color: #2d3e20; margin-bottom: 5px; font-size: 28px; }
+        .search-header p { color: #555; font-size: 15px; }
+        .item-type-badge {
+            position: absolute; top: 10px; right: 10px; background: rgba(0,0,0,0.6); color: #fff; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; z-index: 10;
+        }

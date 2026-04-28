@@ -1,0 +1,1 @@
+alert('Hamper Deleted Successfully'); window.location='hampers.php';

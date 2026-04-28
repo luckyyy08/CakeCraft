@@ -1,0 +1,67 @@
+body { background: #fdfbf7; }
+        .success-container {
+            max-width: 600px;
+            margin: 60px auto;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+            border-top: 5px solid #008542;
+        }
+        .success-icon {
+            font-size: 70px;
+            color: #008542;
+            margin-bottom: 20px;
+        }
+        .success-container h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+        .success-container p {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        .order-number {
+            display: inline-block;
+            background: #fdfbf7;
+            border: 1px dashed #e67e22;
+            color: #e67e22;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .btn-group {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+        .btn-primary {
+            background: #e67e22;
+            color: #fff;
+            padding: 14px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-primary:hover { background: #d35400; }
+        .btn-outline {
+            background: #fff;
+            color: #008542;
+            border: 1px solid #008542;
+            padding: 14px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        .btn-outline:hover {
+            background: #008542;
+            color: #fff;
+        }

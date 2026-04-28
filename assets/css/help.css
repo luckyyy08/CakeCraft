@@ -1,0 +1,63 @@
+.help-header {
+            background: linear-gradient(135deg, #f7f9f2 0%, #eef3e6 100%);
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .help-header h1 {
+            color: #2d3e20;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .help-header p {
+            color: #555;
+            font-size: 16px;
+        }
+
+        .faq-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #749343;
+        }
+        .faq-card h4 {
+            color: #333;
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 15px;
+        }
+
+        .contact-box {
+            background: #fdfbf7;
+            border: 1px dashed #e67e22;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+        .contact-box h3 {
+            color: #e67e22;
+            margin-bottom: 15px;
+        }
+        .contact-box .btn {
+            display: inline-block;
+            background: #e67e22;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+        .contact-box .btn:hover {
+            background: #d35400;
+        }

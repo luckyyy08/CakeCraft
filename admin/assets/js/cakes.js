@@ -1,0 +1,1 @@
+alert('Cake Deleted Successfully'); window.location='cakes.php';

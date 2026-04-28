@@ -1,0 +1,87 @@
+.help-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.help-sidebar {
+    flex: 1;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    height: fit-content;
+    border-top: 4px solid #749343;
+}
+.help-sidebar h3 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 18px;
+    border-bottom: 2px solid #f2edd9;
+    padding-bottom: 15px;
+}
+.help-sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.help-sidebar ul li {
+    margin-bottom: 15px;
+}
+.help-sidebar ul li:last-child {
+    margin-bottom: 0;
+}
+.help-sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s;
+}
+.help-sidebar ul li a:hover {
+    color: #e67e22 !important;
+    transform: translateX(5px);
+}
+
+.help-content {
+    flex: 2.8;
+}
+
+/* Page inner styles */
+.page-title {
+    color: #333;
+    font-size: 26px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.page-text-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    color: #555;
+    line-height: 1.8;
+    font-size: 15px;
+}
+.page-text-card h3 {
+    color: #2d3e20;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.page-text-card h3:first-child {
+    margin-top: 0;
+}
+.page-text-card ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.page-text-card li {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,1 @@
+alert('Order Status Updated Successfully'); window.location='orders.php';

@@ -1,0 +1,176 @@
+:root {
+        --brand-green: #749343;
+        --brand-light-gray: #f9f9f9;
+        --dark-text: #222;
+    }
+
+    body { margin: 0; font-family: 'Roboto', sans-serif; }
+
+/* Top Utility Bar */
+    .header-top {
+        background: var(--brand-green);
+        color: #fff;
+        padding: 10px 60px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
+    .header-top a { text-decoration: none; color: #fff; margin-left: 20px; transition: none; opacity: 0.9; }
+    .header-top a:hover { opacity: 1; text-decoration: underline; }
+    
+    /* Main Header Container */
+    .header-main {
+        padding: 18px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #fff;
+        gap: 25px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .brand-logo img {
+        height: 65px; 
+        width: auto;
+        transition: none;
+    }
+    .brand-logo:hover img {
+        transform: none;
+    }
+
+    /* Search Bar Style */
+    .search-container {
+        flex-grow: 1;
+        max-width: 650px;
+        position: relative;
+        display: flex;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        border-radius: 6px;
+    }
+
+    .search-container input {
+        width: 100%;
+        padding: 12px 20px;
+        border: 1px solid #e0e0e0;
+        border-radius: 6px 0 0 6px;
+        outline: none;
+        font-size: 14px;
+        transition: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    .search-container input:focus {
+        border-color: var(--brand-green);
+    }
+
+    .search-btn {
+        background: var(--brand-green);
+        border: 1px solid var(--brand-green);
+        padding: 0 20px;
+        border-radius: 0 6px 6px 0;
+        cursor: pointer;
+        color: #fff;
+        transition: none;
+    }
+    .search-btn:hover {
+        background: #5f7a36;
+    }
+
+    /* Navigation Icons */
+    .nav-icons {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .nav-icons a {
+        text-decoration: none;
+        color: #444;
+        text-align: center;
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: none;
+    }
+
+    .nav-icons a:hover {
+        color: var(--brand-green);
+    }
+
+    .nav-icons i {
+        font-size: 22px;
+        margin-bottom: 6px;
+    }
+
+    /* Category Navigation */
+    .category-nav {
+        background: #fff;
+        border-bottom: 1px solid #f0f0f0;
+        padding: 12px 60px;
+        display: flex;
+        gap: 35px;
+        justify-content: center;
+    }
+
+    .category-nav a {
+        text-decoration: none;
+        color: #444;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        transition: none;
+        padding-bottom: 4px;
+        position: relative;
+    }
+
+    .category-nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: var(--brand-green);
+        transition: none;
+    }
+
+    .category-nav a:hover {
+        color: var(--brand-green);
+    }
+    
+    .category-nav a:hover::after {
+        width: 100%;
+    }
+
+    /* RESPONSIVE STYLES */
+    @media (max-width: 992px) {
+        .header-main, .category-nav { padding-left: 20px; padding-right: 20px; }
+    }
+    @media (max-width: 768px) {
+        .header-top { display: none; }
+        .header-main {
+            padding: 15px 20px;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .brand-logo img { height: 45px; }
+        .search-container { max-width: 100%; order: 3; }
+        .nav-icons { order: 2; width: 100%; justify-content: space-around; gap: 0; }
+        .nav-icons a span { font-size: 11px; }
+        .nav-icons i { font-size: 18px; }
+        
+        .category-nav {
+            padding: 10px 15px;
+            gap: 15px;
+            overflow-x: auto;
+            justify-content: flex-start;
+            -webkit-overflow-scrolling: touch;
+        }
+        .category-nav::-webkit-scrollbar { display: none; }
+        .category-nav a { font-size: 12px; white-space: nowrap; flex-shrink: 0; }
+    }

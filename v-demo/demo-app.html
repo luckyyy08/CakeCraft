@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeCraft | Live Demo Showcase</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary: #749343;
+            --secondary: #d81b60;
+            --accent: #b7860b;
+            --light-bg: #f9f9f9;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            color: #333;
+        }
+
+        /* Banner for demo mode */
+        .demo-banner {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 8px;
+            font-size: 13px;
+            font-weight: 500;
+            position: sticky;
+            top: 0;
+            z-index: 2000;
+        }
+
+        header {
+            padding: 15px 50px;
+            background: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 31px; /* after banner */
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            color: #555;
+        }
+
+        /* Hero */
+        .hero {
+            height: 500px;
+            background: linear-gradient(135deg, #f7f9f2 0%, #eef3e6 100%);
+            display: flex;
+            align-items: center;
+            padding: 0 80px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-content {
+            max-width: 500px;
+            z-index: 2;
+        }
+
+        .hero-content h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            color: #2d3e20;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: var(--primary);
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .hero-img {
+            position: absolute;
+            right: 80px;
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        /* Categories */
+        .section {
+            padding: 60px 40px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 28px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .cat-card {
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .cat-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #f2edd9;
+            margin-bottom: 15px;
+            transition: 0.3s;
+            object-fit: cover;
+        }
+
+        .cat-card:hover .cat-img {
+            border-color: var(--primary);
+            transform: scale(1.05);
+        }
+
+        /* Product Cards */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #fff;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 15px;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .price {
+            font-weight: 700;
+            color: var(--primary);
+            font-size: 18px;
+        }
+
+        /* Notification */
+        #notification {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            display: none;
+            z-index: 3000;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100px); }
+            to { transform: translateY(0); }
+        }
+
+        footer {
+            background: #111;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="demo-banner">
+        🚀 LIVE PREVIEW MODE: All data is static for portfolio demonstration. <a href="index.html" style="color: #749343; margin-left:10px;">Back to Case Study</a>
+    </div>
+
+    <header>
+        <a href="#" class="logo">CakeCraft</a>
+        <nav class="nav-links">
+            <a href="#">Cakes</a>
+            <a href="#">Decorations</a>
+            <a href="#">Hampers</a>
+            <a href="#">Candles</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-search"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping" onclick="alert('Cart is empty in demo mode')"></i>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Cakes & Fresh Bakes</h1>
+            <p>#1 Gifting Central with over 2 Million Smiles Delivered. Same Day & Midnight Delivery Available.</p>
+            <a href="#shop" class="btn">Explore Collection</a>
+        </div>
+        <img src="assets/images/cakes/wcake1.jpeg" class="hero-img" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500'">
+    </section>
+
+    <div id="shop"></div>
+
+    <section class="section">
+        <h2 class="section-title">Shop by Category</h2>
+        <div class="grid">
+            <a href="#" class="cat-card">
+                <img src="assets/images/cakes/cake1.png" class="cat-img" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=300'">
+                <h4>Delicious Cakes</h4>
+            </a>
+            <a href="#" class="cat-card">
+                <img src="assets/images/decorations/decoration1.jpg" class="cat-img" onerror="this.src='https://images.unsplash.com/photo-1530103862676-de8892bc952f?w=300'">
+                <h4>Decorations</h4>
+            </a>
+            <a href="#" class="cat-card">
+                <img src="assets/images/hampers/hamper1.jpg" class="cat-img" onerror="this.src='https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=300'">
+                <h4>Gift Hampers</h4>
+            </a>
+            <a href="#" class="cat-card">
+                <img src="assets/images/candles/candle1.jpg" class="cat-img" onerror="this.src='https://images.unsplash.com/photo-1603006905393-c39339097e93?w=300'">
+                <h4>Scented Candles</h4>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" style="background: var(--light-bg);">
+        <h2 class="section-title">Bestselling Cakes</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/images/cakes/wcake1.jpeg" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400'">
+                <h3>Vanilla Truffle Cake</h3>
+                <p class="price">₹ 499</p>
+                <button class="btn" style="width: 100%; margin-top: 10px;" onclick="showNotify('Vanilla Truffle Cake added!')">Add to Cart</button>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="assets/images/cakes/cake2.png" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?w=400'">
+                <h3>Chocolate Fantasy</h3>
+                <p class="price">₹ 599</p>
+                <button class="btn" style="width: 100%; margin-top: 10px;" onclick="showNotify('Chocolate Fantasy added!')">Add to Cart</button>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="assets/images/cakes/cake3.png" class="product-img" onerror="this.src='https://images.unsplash.com/photo-1562777717-dc6984f65a63?w=400'">
+                <h3>Red Velvet Heart</h3>
+                <p class="price">₹ 649</p>
+                <button class="btn" style="width: 100%; margin-top: 10px;" onclick="showNotify('Red Velvet Heart added!')">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 CakeCraft Demo Page. Designed for Portfolio Showcase.</p>
+    </footer>
+
+    <div id="notification">Item added to cart!</div>
+
+    <script>
+        function showNotify(msg) {
+            const n = document.getElementById('notification');
+            n.innerText = msg;
+            n.style.display = 'block';
+            setTimeout(() => {
+                n.style.display = 'none';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

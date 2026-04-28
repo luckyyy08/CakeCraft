@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CakeCraft Admin | Demo Showcase</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --sidebar: #1e293b;
+            --primary: #749343;
+            --bg: #f8fafc;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            background: var(--bg);
+            display: flex;
+        }
+
+        .sidebar {
+            width: 260px;
+            background: var(--sidebar);
+            height: 100vh;
+            color: #fff;
+            padding: 20px;
+            position: fixed;
+        }
+
+        .main {
+            margin-left: 260px;
+            flex: 1;
+            padding: 30px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 15px;
+            color: #cbd5e1;
+            text-decoration: none;
+            border-radius: 8px;
+            margin-bottom: 5px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover, .nav-link.active {
+            background: rgba(255,255,255,0.1);
+            color: #fff;
+        }
+
+        .nav-link.active {
+            border-left: 4px solid var(--primary);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #edf2f7;
+        }
+
+        .stat-card h3 {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+
+        .chart-container {
+            background: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #edf2f7;
+            margin-bottom: 30px;
+        }
+
+        .table-container {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid #edf2f7;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            color: #64748b;
+            font-size: 13px;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+
+        .status {
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        .status.delivered { background: #dcfce7; color: #166534; }
+        .status.pending { background: #fef9c3; color: #854d0e; }
+
+        .demo-bar {
+            background: #1e293b;
+            color: #fff;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 260px;
+            right: 0;
+            text-align: center;
+            font-size: 12px;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="logo">
+            <i class="fa-solid fa-cake-candles" style="color: var(--primary);"></i>
+            CakeCraft Admin
+        </div>
+        <a href="#" class="nav-link active"><i class="fa-solid fa-house"></i> Dashboard</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-cake-candles"></i> Products</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-cart-shopping"></i> Orders</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-users"></i> Customers</a>
+        <a href="#" class="nav-link"><i class="fa-solid fa-chart-simple"></i> Reports</a>
+        <div style="margin-top: 40px;">
+             <a href="index.html" class="nav-link" style="color: var(--primary);"><i class="fa-solid fa-arrow-left"></i> Exit Demo</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h1 style="font-size: 24px; color: #1e293b;">Executive Overview</h1>
+            <div style="color: #64748b; font-size: 14px;">Sunday, 12 April 2026</div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Sales</h3>
+                <div class="value">₹ 1,24,500</div>
+                <div style="color: #10b981; font-size: 12px; margin-top: 5px;"><i class="fa-solid fa-arrow-up"></i> 12% from last month</div>
+            </div>
+            <div class="stat-card">
+                <h3>Total Orders</h3>
+                <div class="value">452</div>
+                <div style="color: #10b981; font-size: 12px; margin-top: 5px;"><i class="fa-solid fa-arrow-up"></i> 5% from last month</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Users</h3>
+                <div class="value">1,280</div>
+                <div style="color: #10b981; font-size: 12px; margin-top: 5px;"><i class="fa-solid fa-arrow-up"></i> 8% from last month</div>
+            </div>
+            <div class="stat-card">
+                <h3>Pending Orders</h3>
+                <div class="value">18</div>
+                <div style="color: #f59e0b; font-size: 12px; margin-top: 5px;"><i class="fa-solid fa-clock"></i> Action required</div>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <h3>Monthly Revenue Growth</h3>
+            <canvas id="salesChart" height="100"></canvas>
+        </div>
+
+        <div class="table-container">
+            <h3 style="margin-bottom: 20px;">Recent Orders</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Customer</th>
+                        <th>Product</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#ORD-8921</td>
+                        <td>Rahul Sharma</td>
+                        <td>Red Velvet Cake (1kg)</td>
+                        <td>₹ 850</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-8922</td>
+                        <td>Anita Desai</td>
+                        <td>Chocolate Truffle + Balloon Decor</td>
+                        <td>₹ 2,400</td>
+                        <td><span class="status pending">Pending</span></td>
+                    </tr>
+                    <tr>
+                        <td>#ORD-8923</td>
+                        <td>Vikram Singh</td>
+                        <td>Gift Hamper (Premium)</td>
+                        <td>₹ 1,200</td>
+                        <td><span class="status delivered">Delivered</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="demo-bar">
+        ⚠️ This is a static UI simulation of the Admin Dashboard. No real database interaction is performed.
+    </div>
+
+    <script>
+        const ctx = document.getElementById('salesChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                datasets: [{
+                    label: 'Revenue (₹)',
+                    data: [45000, 52000, 48000, 61000, 75000, 89000],
+                    borderColor: '#749343',
+                    backgroundColor: 'rgba(116, 147, 67, 0.1)',
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: { display: false }
+                },
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
