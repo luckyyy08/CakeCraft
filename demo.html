@@ -18,20 +18,53 @@
 
     <style>
         .demo-notice {
-            background: #222;
+            background: linear-gradient(90deg, #1e1e1e, #333, #1e1e1e);
             color: #fff;
             text-align: center;
-            padding: 8px;
-            font-size: 13px;
+            padding: 10px 20px;
+            font-size: 14px;
             font-weight: 500;
             position: sticky;
             top: 0;
             z-index: 2000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .demo-notice .demo-badge {
+            background: #e67e22;
+            color: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
         }
         .demo-notice a {
-            color: #749343;
-            margin-left: 10px;
-            text-decoration: underline;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.3);
+            padding: 6px 15px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-size: 13px;
+        }
+        .demo-notice a:hover {
+            background: #fff;
+            color: #111;
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+        }
+        .demo-notice a.primary-link {
+            background: #749343;
+            border-color: #749343;
+        }
+        .demo-notice a.primary-link:hover {
+            background: #5f7a36;
+            color: #fff;
         }
         /* Override header sticky to be under notice */
         .header-main {
@@ -41,9 +74,31 @@
 </head>
 <body>
 
+<!-- SweetAlert2 for Professional Alerts -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    // Override default alert to make it look premium
+    window.alert = function(message) {
+        Swal.fire({
+            title: 'Action Disabled',
+            text: message,
+            icon: 'info',
+            confirmButtonColor: '#749343',
+            confirmButtonText: 'Understood',
+            customClass: {
+                popup: 'premium-popup'
+            }
+        });
+    };
+</script>
+
 <div class="demo-notice">
-    🚀 LIVE DEMO MODE: This is a static showcase of the CakeCraft application for my portfolio.
-    <a href="v-demo/index.html">Back to Portfolio</a> | <a href="admin-demo.html" style="color: #e67e22;">View Admin Panel Demo</a>
+    <span class="demo-badge">Live Demo</span>
+    <span>This is a static showcase of the CakeCraft application.</span>
+    <div style="display:flex; gap:10px;">
+        <a href="v-demo/index.html">Back to Portfolio</a>
+        <a href="admin-demo.html" class="primary-link"><i class="fa-solid fa-gauge" style="margin-right: 5px;"></i> View Admin Panel</a>
+    </div>
 </div>
 
 <header class="header-main">
