@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="admin/assets/css/index.css">
 
     <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+            background: #f4f6f9;
+        }
         .demo-notice {
             background: linear-gradient(90deg, #1a2a3a, #2c3e50, #1a2a3a);
             color: #fff;
@@ -17,14 +25,15 @@
             padding: 10px 20px;
             font-size: 14px;
             font-weight: 500;
-            position: sticky;
-            top: 0;
+            position: relative; /* Changed from sticky so it doesn't conflict with fixed sidebar */
             z-index: 2000;
             display: flex;
             justify-content: center;
             align-items: center;
             gap: 15px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            width: 100%;
+            box-sizing: border-box;
         }
         .demo-notice .demo-badge {
             background: #e74c3c;
@@ -64,6 +73,24 @@
             background-color: #f1f8ff;
             cursor: pointer;
         }
+        
+        /* Layout Fixes for Admin Demo */
+        .admin-layout-wrapper {
+            display: flex;
+            flex-grow: 1;
+            position: relative;
+        }
+        .sidebar {
+            position: sticky !important;
+            top: 0;
+            height: auto;
+            min-height: calc(100vh - 45px); /* Subtract banner height approximately */
+            flex-shrink: 0;
+        }
+        .main-content {
+            margin-left: 0 !important; /* Override fixed margin */
+            width: 100% !important; /* Override fixed width */
+        }
     </style>
 </head>
 <body>
@@ -95,7 +122,8 @@
     </div>
 </div>
 
-<aside class="sidebar" style="top: 31px; height: calc(100vh - 31px);">
+<div class="admin-layout-wrapper">
+<aside class="sidebar">
     <div class="sidebar-header">
         <i class="fa-solid fa-cake-candles"></i> CakeCraft
     </div>
@@ -256,6 +284,8 @@
         </div>
     </div>
 </main>
+
+</div>
 
 </body>
 </html>
